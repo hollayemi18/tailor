@@ -4,6 +4,7 @@ import axios from 'axios'
 import Bottom from './Bottom'
 import Navbar from './component/layouts/Navbar'
 import Cards from './component/Cards'
+import Footer from '../pages/Footer'
 function Dashboard() {
 const navigate = useNavigate()
 
@@ -23,6 +24,7 @@ const navigate = useNavigate()
    <div>
             <Navbar />
             <Cards />
+            <Footer />
             <Bottom />
 
 
