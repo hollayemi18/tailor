@@ -66,7 +66,10 @@ const Login = () => {
                  toast.error('Invalid email or password')
             )}
 
-            <form className="space-y-5" onSubmit={login}>
+            <form className="space-y-5"
+              
+             
+            >
                 <div>
                     <Input
                         label={"Email"}
@@ -97,9 +100,13 @@ const Login = () => {
                     <Link to="/forgot-password">Forgot Password?</Link>
                 </div>
 
-                <PrimaryButton onClick={login}>
+                <PrimaryButton
+                      
                     
-                    <span>Login to account</span>
+         
+          >
+                    
+                    <Link to='/dashboard' >Login to account</Link>
                 </PrimaryButton>
 
                 <div className="flex items-center justify-center space-x-3">
