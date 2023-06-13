@@ -40,7 +40,25 @@ const Cards = () => {
                    
                         <p className="max-w-lg">
                            
-                            View Orders And Progress Of Orders
+                            Explore styles and Add to cart
+                        </p>
+                    </div>
+                     <div  style={{backgroundRepeat: "no-repeat" ,backgroundImage: "url('/images/banner-map.png') "  }}
+                    className="transition-all duration-300 border border-indigo-200 rounded-2xl  p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
+                           
+                            <div>
+                                  {explore}
+                            </div>
+                        <div className="flex  justify-center">
+                          
+                            <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500
+                             dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500
+                              dark:focus:ring-blue-800">Explore</button>
+                        </div>
+                   
+                        <p className="max-w-lg">
+                           
+                            Explore styles and Add to cart
                         </p>
                     </div>
                     </div>
