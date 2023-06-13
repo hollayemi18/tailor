@@ -1,8 +1,9 @@
 import React from 'react'
 import avatar from  '../../image/avatar.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShirt } from '@fortawesome/free-solid-svg-icons'
+import { faShirt ,faFolder} from '@fortawesome/free-solid-svg-icons'
 const  cloth = <FontAwesomeIcon icon={faShirt} fade size="lg" />
+const explore  = <FontAwesomeIcon icon={faFolder} flip size="2xl" />
 const Cards = () => {
   return (
   <div className="w-full grid mt-10 grid-cols-1 px-10 md:flex flex-row gap-2 text-indigo-900">
@@ -24,11 +25,11 @@ const Cards = () => {
                             View Orders And Progress Of Orders
                         </p>
                     </div>
-                     <div  style={{backgroundRepeat: "no-repeat" ,backgroundImage: "url('/images/homepage3.jpg') "  }}
+                     <div  style={{backgroundRepeat: "no-repeat" ,backgroundImage: "url('/images/banner-map.png') "  }}
                     className="transition-all duration-300 border border-indigo-200 rounded-2xl  p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
                            
                             <div>
-                                  {cloth}
+                                  {explore}
                             </div>
                         <div className="flex  justify-center">
                           
