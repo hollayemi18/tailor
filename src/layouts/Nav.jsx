@@ -11,7 +11,8 @@ const Nav = () => {
     };
 
     return (
-        <nav className="text-gray-600 p-2 sm:p-0 text-base xl:text-lg font-medium bg-white py-4 lg:py-[1.1rem] xl:py-8 border-b shadow-sm fixed w-full z-50">
+        <nav className="text-gray-600 p-2 sm:p-0 text-base xl:text-lg font-medium bg-white py-4 
+        lg:py-[1.1rem] xl:py-8 border-b shadow-sm fixed w-full z-50">
             <div className="flex items-center justify-between py-0 xl:py-0">
                 <div className="flex items-center space-x-12">
                     <Link to="/" className="flex items-center">
