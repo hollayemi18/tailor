@@ -7,7 +7,9 @@ import Dashboard from "./clientSide/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ResetPassword from "./pages/ResetPassword";
-
+import Explore from "./clientSide/utils/Explore";
+import Blog from "./clientSide/utils/Blog";
+import Ease from "./clientSide/utils/Ease";
 const App = () => {
     return (
         <Router>
@@ -19,6 +21,9 @@ const App = () => {
                 <Route path="/reset-password" element={<ResetPassword />} />
                 <Route path="dashboard" element={<Dashboard />} />
                 <Route path="/*" element={<Home />} />
+                <Route path="/explore" element={<Explore />} />
+                <Route path="/ease" element={<Ease />} />
+                <Route path="/blog" element={<Blog />} />
             </Routes>
         </Router>
     );

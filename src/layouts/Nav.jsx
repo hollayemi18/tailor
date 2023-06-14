@@ -22,25 +22,25 @@ const Nav = () => {
 
                     <div className="space-x-4 xl:space-x-8 hidden md:block">
                         <Link
-                            to="#explore"
+                            to="/explore"
                             className="transition-all duration-300 font-medium py-2 xl:py-3 hover:text-indigo-600"
                         >
                             Explore
                         </Link>
                         <Link
-                            to="#ease"
+                            to="/ease"
                             className="transition-all duration-300 font-medium py-2 xl:py-3 hover:text-indigo-600"
                         >
                             Why Ease
                         </Link>
                         <Link
-                            to="#blog"
+                            to="/blog"
                             className="transition-all duration-300 font-medium py-2 xl:py-3 hover:text-indigo-600"
                         >
                             Blog
                         </Link>
                         <Link
-                            to="#contact"
+                            to="/contact"
                             className="transition-all duration-300 font-medium py-2 xl:py-3 hover:text-indigo-600"
                         >
                             Contact Us
@@ -134,7 +134,7 @@ const Nav = () => {
                     <div className="flex items-center space-x-3 hidden md:block">
                         <Link
                             to="/login"
-                            className="transition-all duration-300 px-3 lg:px-4 xl:px-8 font-medium py-2 xl:py-3 hover:text-indigo-600"
+                            className="transition-all pr-8 duration-300 px-3 lg:px-4 xl:px-8 font-medium py-2 xl:py-3 hover:text-indigo-600"
                         >
                             Login
                         </Link>
@@ -167,7 +167,7 @@ const Nav = () => {
                                     <div className="">
                                         <Menu.Item>
                                             <Link
-                                                to="/#explore"
+                                                to="/explore"
                                                 className="block transition-all duration-300 font-medium py-2 hover:text-indigo-600"
                                             >
                                                 Explore
@@ -176,7 +176,7 @@ const Nav = () => {
 
                                         <Menu.Item>
                                             <Link
-                                                to="/#ease"
+                                                to="/ease"
                                                 className="block transition-all duration-300 font-medium py-2 hover:text-indigo-600"
                                             >
                                                 Why Ease
@@ -185,7 +185,7 @@ const Nav = () => {
 
                                         <Menu.Item>
                                             <Link
-                                                to="/#blog"
+                                                to="/blog"
                                                 className="block transition-all duration-300 font-medium py-2 hover:text-indigo-600"
                                             >
                                                 Blog
@@ -194,7 +194,7 @@ const Nav = () => {
 
                                         <Menu.Item>
                                             <Link
-                                                to="/#contact"
+                                                to="/contact"
                                                 className="block transition-all duration-300 font-medium py-2 hover:text-indigo-600"
                                             >
                                                 Contact Us

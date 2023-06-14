@@ -50,7 +50,7 @@ const Banner = () => {
                                 
 
                                 <Link
-                                    to="/#how-it-work"
+                                    to="/explore"
                                     className="lg:text-lg truncate transition-all duration-300 px-3 lg:px-4 xl:px-8 font-medium py-3 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
                                 >
                                     Explore

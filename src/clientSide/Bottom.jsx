@@ -5,7 +5,7 @@ const Bottom = () => {
   return (
     <div>
         
-<div className="fixed bg-neutral-200  z-50 w-full h-16 max-w-lg -translate-x-1/2 
+<div className="fixed bg-neutral-200  shadow-lg z-50 w-full h-16 max-w-lg -translate-x-1/2 
  border-gray-200 rounded-full bottom-2 left-1/2 ">
     <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
        <Link to="/dashboard/client" className="no-underline text-black">
