@@ -35,10 +35,13 @@ const Register = () => {
         navigate('/login')
        return toast.success("successfully registered")
       }
+      if(!reg){
+    return toast.error("User Already Exist")
 
+      }
       
     } catch (error) {
-    return toast.error("Username or email is taken")
+    return toast.error("Something went wrong")
     }
   }
     return (

@@ -2,18 +2,12 @@ import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import {Link}  from 'react-router-dom'
-import { PrimaryButton, SecondaryButton } from "../layouts/buttons";
+
 import { Checkbox, Input } from "../layouts/field";
 import axios from 'axios'
-import {toast} from 'react-toastify'
+import {toast, ToastContainer} from 'react-toastify'
 const Login = () => {
   const navigate = useNavigate();
-    const defaultMessage = {
-        email: [],
-        password: []
-    };
-    const [invalid, setInvalid] = useState(false);
-    const [errorMessage, setErrorMessage] = useState(defaultMessage);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -22,37 +16,33 @@ const Login = () => {
     const login =async (e) => {
         e.preventDefault()
 
-          const loginAuth = await axios.post("http://localhost:8080/login", {
+    
+            if (!email) {
+         return toast.error("All fields are required")
+        
+            }
+            if (!password) {
+         return toast.error("All fields are required")
+                
+            }
+          try {
+                    const loginAuth = await axios.post("http://localhost:8080/login", {
                email,
                 password
            },{withCredentials: true})
         
-        setTimeout(() => {
-            const newErrorMessage = defaultMessage;
-            if (!email) {
-                newErrorMessage.email = ["This field is required"];
-            }
-            if (!password) {
-                newErrorMessage.password = ["This field is required"];
-            }
-        
-            if (loginAuth) {
-                setInvalid(true);
-                toast.success("success", "Successful connection");;
+            if (!loginAuth )  {
+                  toast.error("Email or Password is Incorrect");
             
+            }else{
+               toast.success("success", "Successful connection")
+                navigate("/dashboard")
+               
             }
 
-            if (!email || !password || email === "admin" || password === "12345" ) {
-                
-                navigate("/dashboard")
-              
-                   
-
-              } 
-
-
-            setErrorMessage(newErrorMessage);
-        }, 3000);
+          } catch (error) {
+                  toast.error("Email or Password is Incorrect");
+          }
     };
 
     return (
@@ -62,14 +52,11 @@ const Login = () => {
                 Please sign-in to your account and continue the adventure.
             </p>
 
-            {invalid && (
-                 toast.error('Invalid email or password')
-            )}
-
             <form className="space-y-5"
               
-             
+             onSubmit={login}
             >
+                  <ToastContainer />
                 <div>
                     <Input
                         label={"Email"}
@@ -78,7 +65,7 @@ const Login = () => {
                         placeholder="Enter email"
                         value={email}
                         onChange={e => setEmail(e.target.value)}
-                        error={errorMessage.email}
+                    
                     />
                 </div>
 
@@ -90,7 +77,7 @@ const Login = () => {
                         placeholder="Enter password"
                         value={password}
                         onChange={e => setPassword(e.target.value)}
-                        error={errorMessage.password}
+                    
                     />
                 </div>
 
@@ -99,15 +86,12 @@ const Login = () => {
 
                     <Link to="/forgot-password">Forgot Password?</Link>
                 </div>
-
-                <PrimaryButton
-                      
+                   <button 
+                 className="transition-all duration-300 px-2 border py-3 rounded-md border-gray-300 w-full flex justify-center items-center space-x-2 bg-indigo-500 hover:bg-gray-300"
+                onSubmit={login}>
                     
-         
-          >
-                    
-                    <Link to='/dashboard' >Login to account</Link>
-                </PrimaryButton>
+                    <span>Sign up</span>
+                </button>
 
                 <div className="flex items-center justify-center space-x-3">
                     <hr className="w-12" />
@@ -116,13 +100,14 @@ const Login = () => {
                 </div>
 
                 <div className="flex items-center space-x-4 lg:space-x-2 xl:space-x-4 text-sm font-semibold">
-                    <SecondaryButton as="a" href="#auth-google">
+                     <button 
+                    className="transition-all duration-300 px-2 border py-3 rounded-md border-gray-300 w-full flex justify-center items-center space-x-2 hover:bg-gray-300">
                         <FcGoogle className="h-5 w-5 lg:w-4 lg:h-4 xl:h-5 xl:w-5" />
 
                         <span className="text-[0.7rem] md:text-sm lg:text-[0.7rem] xl:text-sm">
                             Continue with Google
                         </span>
-                    </SecondaryButton>
+                    </button>
 
                 
                 </div>
