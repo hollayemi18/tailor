@@ -18,7 +18,7 @@ const Login = () => {
 
     
             if (!email) {
-         return toast.error("All fields are required")
+         return toast.error("All fields are required like fuck")
         
             }
             if (!password) {
