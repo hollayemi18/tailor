@@ -26,7 +26,7 @@ const Register = () => {
          return toast.error("All fields are required")
       }
     try {  
-         const reg = await axios.post('http://localhost:8080/register',{
+         const reg = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`,{
         username,email,password
       },{withCredentials: true})
       console.log(reg)     
