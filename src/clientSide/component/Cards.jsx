@@ -23,7 +23,7 @@ const Cards = () => {
                               dark:focus:ring-blue-800">My Order's</button>
                         </div>
                    
-                        <p className="max-w-lg">
+                        <p className="max-w-lg font-black">
                            
                             View Orders And Track Progress Of Orders
                         </p>
@@ -41,7 +41,7 @@ const Cards = () => {
                               dark:focus:ring-blue-800">Explore</button>
                         </div>
                    
-                        <p className="max-w-lg">
+                        <p className="max-w-lg font-black">
                            
                             Explore styles and Add to cart
                         </p>
@@ -58,7 +58,7 @@ const Cards = () => {
                               dark:focus:ring-blue-800">My Measurement</button>
                         </div>
                    
-                        <p className="max-w-lg">
+                        <p className="max-w-lg font-black">
                            
                             Input Measurement and learn how to measure 
                         </p>
@@ -73,7 +73,7 @@ const Cards = () => {
                               dark:focus:ring-blue-800">Packages</button>
                         </div>
                    
-                        <p className="max-w-lg">
+                        <p className="max-w-lg font-black" >
                            
                         View types of package for more explore 
                         </p>
