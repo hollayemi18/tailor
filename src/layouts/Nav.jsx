@@ -170,7 +170,7 @@ const Nav = () => {
                                                 to="/explore"
                                                 className="block transition-all duration-300 font-medium py-2 hover:text-indigo-600"
                                             >
-                                                Explore
+                                    
                                             </Link>
                                         </Menu.Item>
 
