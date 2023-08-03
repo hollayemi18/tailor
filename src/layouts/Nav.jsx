@@ -11,9 +11,9 @@ const Nav = () => {
     };
 
     return (
-        <nav className="text-gray-600 p-2 sm:p-0 text-base xl:text-lg font-medium bg-white py-4 
+        <nav className="text-gray-600 p-7 m:p-3 text-base xl:text-lg font-medium bg-white py-4 
         lg:py-[1.1rem] xl:py-8 border-b shadow-sm fixed w-full z-50">
-            <div className="flex items-center justify-between py-0 xl:py-0">
+            <div className="flex items-center justify-evenly py-0 xl:py-0">
                 <div className="flex items-center space-x-12">
                     <Link to="/" className="flex items-center">
                                      <img src="/images/nav1.png" alt="background" className="h-12 w-12"/>
@@ -188,7 +188,7 @@ const Nav = () => {
                                                 to="/blog"
                                                 className="block transition-all duration-300 font-medium py-2 hover:text-indigo-600"
                                             >
-                                                Blog
+                                            blog
                                             </Link>
                                         </Menu.Item>
 
