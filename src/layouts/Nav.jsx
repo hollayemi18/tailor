@@ -150,7 +150,7 @@ const Nav = () => {
 
                     <div className="md:hidden relative">
                         <Menu as="div" className="relative inline-block text-left">
-                            <Menu.Button className="inline-flex w-full justify-center rounded-md bg--600 p-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                            <Menu.Button className="inline-flex w-full justify-center rounded-md bg-indigo-400 p-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                                 <HiMenu className="h-7 w-7" />
                             </Menu.Button>
 
