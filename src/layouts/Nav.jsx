@@ -11,23 +11,23 @@ const Nav = () => {
     };
 
     return (
-        <nav className="text-gray-600 p-7 m:p-3 text-base xl:text-lg font-medium bg-white py-4 
+        <nav className="text-gray-600 m-0 md:p-5 text-base xl:text-lg font-medium bg-white py-4 
         lg:py-[1.1rem] xl:py-8 border-b shadow-sm fixed w-full z-50">
-            <div className="flex items-center justify-evenly py-0 xl:py-0">
+            <div className="flex space-x-4 items-center justify-evenly px-3 py-0 xl:py-0">
                 <div className="flex items-center space-x-12">
                     <Link to="/" className="flex items-center">
                                      <img src="/images/nav1.png" alt="background" className="h-12 w-12"/>
                                     <h2 className=" font-serif font-semibold text-indigo-600 md:text-4xl text-2xl">Ease </h2>       
                     </Link>
 
-                    <div className="space-x-4 xl:space-x-8 hidden md:block">
+                    <div className=" xl:space-x-8 hidden md:block">
                         <Link
                             to="/explore"
                             className="transition-all duration-300 font-medium py-2 xl:py-3 hover:text-indigo-600"
                         >
                             Explore
                         </Link>
-                        <Link
+                          <Link
                             to="/ease"
                             className="transition-all duration-300 font-medium py-2 xl:py-3 hover:text-indigo-600"
                         >
@@ -49,7 +49,7 @@ const Nav = () => {
                 </div>
                     <Menu>
                         <div className="relative">
-                            <div className="ml-48 border-0 border-indigo-500 rounded-md  md:hidden">
+                            <div className="ml-32 border-0 border-indigo-500 rounded-md  md:hidden">
                            <Link
                             to="/login"
                             className="transition-all text-indigo-600 border-2 rounded-md border-indigo-700 duration-300 px-3 lg:px-4 xl:px-8 font-medium py-2 xl:py-3 hover:text-indigo-600"
@@ -150,7 +150,7 @@ const Nav = () => {
 
                     <div className="md:hidden relative">
                         <Menu as="div" className="relative inline-block text-left">
-                            <Menu.Button className="inline-flex w-full justify-center rounded-md bg-indigo-600 p-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                            <Menu.Button className="inline-flex w-full justify-center rounded-md bg--600 p-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                                 <HiMenu className="h-7 w-7" />
                             </Menu.Button>
 
