@@ -19,7 +19,7 @@ const Register = () => {
          if(!email ){
          return toast.error("All fields are required")
       }
-         if(!username ){
+         if(!username ){ 
          return toast.error("All fields are required")
       }
            if(!password ){
