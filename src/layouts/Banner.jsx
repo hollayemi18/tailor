@@ -39,7 +39,7 @@ const Banner = () => {
                                 Fashion,
                                 <br /> Great Fit,At Your <span className="text-green-700">Doorstep</span>
                             </h1>
-                            <div className="flex items-center ml-16 mt-32 lg:space-x-12">
+                            <div className="flex items-center ml-32 mt-32 lg: space-x-24 ">
                                 
                                     <Link
                                         to="/register"
@@ -47,13 +47,15 @@ const Banner = () => {
                                          bg-indigo-600 text-white rounded-md focus:outline-none 
                                          hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50 lg:text-lg "
                                     >
-                                        Sign UP 
+                                        Sign Up
                                     </Link>
                                 
 
                                 <Link
                                     to="/explore"
-                                    className="lg:text-lg truncate transition-all duration-300 px-3 lg:px-4 xl:px-8 font-medium py-3 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
+                                    className="md:text-lg truncate transition-all duration-300 px-3 lg:px-4 xl:px-8
+                                     font-medium py-3 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white
+                                     hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
                                 >
                                     Explore
                                 </Link>
