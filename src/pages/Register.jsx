@@ -45,8 +45,8 @@ const Register = () => {
     }
   }
     return (
-         <div className="flex flex-col gap-2 mx-20 mb-48 md:mx-72 pt-10">
-            <h3 className="text-center text-xl font-semibold text-gray-700">Create New Account</h3>
+         <div className="flex flex-col gap-2 mx-10 mb-96 md:mx-72 pt-10">
+            <h3 className="text-center text-xl font-semibold text-black">Create New Account</h3>
             <p className="text-center text-sm mt-2 mb-10">
                 start an adventure of a lifetime of fashion sense
             </p>
@@ -94,7 +94,7 @@ const Register = () => {
                 </div>
 
                 <button 
-                 className="transition-all duration-300 px-2 border py-3 rounded-md border-gray-300 w-full flex justify-center items-center space-x-2 bg-indigo-500 hover:bg-gray-300"
+                 className="text-white transition-all duration-300 px-2 border py-3 rounded-md border-gray-300 w-full flex justify-center items-center space-x-2 bg-indigo-500 hover:bg-gray-300"
                 onSubmit={register}>
                     
                     <span>Sign up</span>

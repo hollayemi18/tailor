@@ -131,7 +131,7 @@ const Nav = () => {
                             </Transition>
                         </div>
                     </Menu>
-                    <div className="flex items-center space-x-3 hidden md:block">
+                    <div className="flex flex-col items-center hidden md:block">
                         <Link
                             to="/login"
                             className="transition-all pr-8 duration-300 px-3 lg:px-4 xl:px-8 font-medium py-2 xl:py-3 hover:text-indigo-600"
@@ -149,8 +149,10 @@ const Nav = () => {
 
 
                     <div className="md:hidden relative">
-                        <Menu as="div" className="relative inline-block text-left">
-                            <Menu.Button className="inline-flex w-full justify-center rounded-md bg-indigo-400 p-2 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+                        <Menu as="div" className="relative inline-block text-center ">
+                            <Menu.Button className="inline-flex w-full justify-center rounded-md bg-gray-200 shadow-2xl
+                             p-2 text-sm font-medium text-blue-900
+                             focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
                                 <HiMenu className="h-7 w-7" />
                             </Menu.Button>
 
@@ -164,7 +166,7 @@ const Nav = () => {
                                 leaveTo="transform opacity-0 scale-95"
                             >
                                 <Menu.Items className="absolute right-0 mt-2 p-3 w-96 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                                    <div className="">
+                                    <div className="justify-center items-center">
                                         <Menu.Item>
                                             <Link
                                                 to="/explore"
@@ -203,11 +205,16 @@ const Nav = () => {
 
                                        
 
-                                        <div className="flex items-center space-x-3">
+                                        <div className="flex items-center mx-6 space-x-3">
                                             <Menu.Item>
                                                 <Link
                                                     to="/login"
-                                                    className="w-1/2 text-center transition-all duration-300 px-3 font-medium py-1.5 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
+                                                    className="w-1/2 text-center transition-all duration-300 px-3
+                                                     font-medium py-1.5 text-indigo-900 border border-indigo-900
+                                                      rounded-md focus:outline-none hover:text-white
+                                                       hover:bg-indigo-700 focus:ring focus:border-indigo-500
+                                                       ml-6
+                                                       focus:ring-indigo-500/50"
                                                 >
                                                     Login
                                                 </Link>
@@ -216,7 +223,10 @@ const Nav = () => {
                                             <Menu.Item>
                                                 <Link
                                                     to="/register"
-                                                    className="transition-all block text-center w-1/2 duration-300 px-3 lg:px-4 xl:px-8 font-medium py-2 xl:py-3 border border-indigo-600 bg-indigo-600 text-white rounded-md focus:outline-none hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
+                                                    className="transition-all block text-center w-1/2 duration-300 px-3 
+                                                    lg:px-4 xl:px-8 font-medium py-2 xl:py-3 border border-indigo-600
+                                                     bg-indigo-600 text-white rounded-md focus:outline-none hover:
+                                                     bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
                                                 >
                                                     Sign Up
                                                 </Link>

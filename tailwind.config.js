@@ -18,6 +18,9 @@ module.exports = {
             animation: {
                 ripple: "rippleAni 3s linear infinite",
                 ripple2: "ripple2Ani 4s linear infinite"
+            },
+            color:{
+                color1 : "#F2F3F9"
             }
         }
     },

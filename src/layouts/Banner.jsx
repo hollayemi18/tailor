@@ -9,17 +9,17 @@ const Banner = () => {
             >
                 <div>
                     <img
-                        className="w-[25%] lg:w-[20%] xl:max-w-full h-auto align-middle absolute left-0 bottom-[5%] animate-ripple2"
+                        className="w-[25%] lg:w-[20%] md:max-w-full h-auto align-middle absolute left-0 bottom-[5%] animate-ripple2"
                         src="/images/homepage3.jpg"
                         alt=""
                     />
                     <img
-                        className="md:block w-[25%] lg:w-[15%] mt-16 xl:w-[19%] h-auto align-middle absolute top-0 left-0"
+                        className="md:block w-[25%] md:w-[15%] mt-16 xl:w-[19%] h-auto align-middle absolute top-0 left-0"
                         src="/images/banner-clock.png"
                         alt=""
                     />
                     <img
-                        className="w-[30%] mb-10 xl:w-[13%] h-auto align-middle absolute left-[calc(48%)] bottom-[12%] animate-ripple2"
+                        className="w-[30%] mb-10 md:w-[13%] h-auto align-middle absolute left-[calc(48%)] bottom-[12%] animate-ripple2"
                         src="/images/banner-rocket.png"
                         alt=""
                     />
@@ -30,34 +30,36 @@ const Banner = () => {
                     <div className="pt-5 flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-4 lg:space-x-0 lg:justify-between relative z-10">
                         <img
                             src="/images/"
-                            className="hidden lg:block lg:w-[11%] absolute top-[3%] left-[47%] xl:left-[54%] animate-ripple"
+                            className="block lg:w-[11%] absolute top-[3%] left-[47%] xl:left-[54%] animate-ripple"
                             alt=""
                         />
                         <div>
                         
-                            <h1 className="text-3xl lg:text-6xl xl:text-7xl font-bold text-indigo-900">
+                            <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold text-indigo-900">
                                 Fashion,
-                                <br /> Great Fit,At Your <span className="text-green-700">Doorstep</span>
+                                <br /> <i><span className="text-green-700 " >Great fit </span></i>,At Your <span className="text-green-700">Doorstep</span>
                             </h1>
-                            <div className="flex items-center ml-32 mt-32 lg: space-x-24 ">
+                            <div className="flex flex-col  justify-center items-center md:flex-row  mt-20 ">
                                 
                                     <Link
                                         to="/register"
-                                        className="truncate transition-all duration-300 px-3 px-4 xl:px-8 font-medium py-3
-                                         bg-indigo-600 text-white rounded-md focus:outline-none 
-                                         hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50 lg:text-lg "
+                                        className="md:text-lg  transition-all duration-300 px-8
+                                        font-extrabold py-3 text-white border border-indigo-900 rounded-md focus:outline-none hover:text-white
+                                    bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
                                     >
-                                        Sign Up
-                                    </Link>
-                                
+                                    Create A Free Account 
 
-                                <Link
+                                    </Link>
+                
+
+                                <Link  
                                     to="/explore"
-                                    className="md:text-lg truncate transition-all duration-300 px-3 px-4 xl:px-8
-                                     font-medium py-3 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white
+                                    className="lg:mt-0 mx-12 font-extrabold md:text-lg mt-8
+                                     truncate transition-all duration-300 px-8 
+                                     font-extrabold py-3 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white
                                      hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
                                 >
-                                    Explore
+                                    <i>Explore</i>
                                 </Link>
                             </div>
                         </div>

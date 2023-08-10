@@ -78,7 +78,7 @@ const Home = () => {
                 </div>
             </Container>
 
-            <div className="wow fadeInUp text-center text-indigo-900 space-y-4 mt-12 mb-8">
+            <div className="wow fadeInUp text-center bg-gray-200 shadow-2xl text-indigo-900 space-y-4 mt-12 mb-8">
                 <h2 className="text-4xl lg:text-2xl font-bold text-center">Be yourself.</h2>
                 <h4 className="text-3xl sm:text-2xl md:text-5xl lg:text-6xl font-bold">
                      Know your proportions. <br className="hidden lg:block" /></h4>
@@ -90,7 +90,8 @@ const Home = () => {
                 </p>
                     <Link
                        to="/register"
-                         className="transition-all block text-center  duration-300 px-2 lg:px-4 xl:px-4 font-medium py-1 xl:py-2 border
+                         className="mx-16 transition-all block text-center  duration-300 px-2
+                          lg:px-4   xl:px-4 font-medium py-1 xl:py-2 border
                           border-indigo-600 bg-indigo-600 text-white rounded-md 
                           focus:outline-none hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
                      >
@@ -224,14 +225,14 @@ const Home = () => {
                             Communication
                         </h3>
                         <p className="max-w-lg text-lg text-indigo-900">
-                            Great work etiquee from the team and ability to deciper your need and wants 
+                            Great work etiquette from the team and ability to decipher your need and wants 
                         </p>
                     </div>
                     </div>
 
             </Container>
-                                <h1 className="text-center font-extrabold my-12 text-indigo-600">Tesitmony</h1>
-<div className='md:flex flex-row my-6 mx-10' >
+                                <h1 className="text-center font-extrabold text-3xl my-12 text-indigo-800"><i>Testimony</i></h1>
+<div className='md:flex flex-row my-6 mx-5 bg-slate-100' >
       <div className='max-sm:hidden my-5'>
             <MDBCard className='max-sm:hidden'>
       <MDBRipple rippleColor='light' rippleTag='div' className='bg-image hover-overlay max-sm:hidden'>
