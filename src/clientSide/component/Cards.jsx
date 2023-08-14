@@ -51,7 +51,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Orders</p>
+                        <p className="mt-2 text-sm font-black text-teal-500">Male Order</p>
                     </div>
                     </Link>
                     <Link>
@@ -61,7 +61,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Measurement</p>
+                        <p className="mt-2 text-sm font-black text-teal-500">Female order</p>
                     </div>
                     </Link>
                     <Link>
@@ -80,7 +80,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Orders</p>
+                        <p className="mt-2 text-sm font-black text-teal-500">Materials</p>
                     </div>
                     </Link>
                     <Link>
@@ -88,7 +88,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                         {tape}
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Measurement</p>
+                        <p className="mt-2 text-sm font-black text-teal-500"> styles</p>
                     </div>
                     </Link>
                     <Link>
@@ -96,7 +96,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                             {history}
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">female style</p>
+                        <p className="mt-2 text-sm font-black text-teal-500">styles</p>
                     </div>
                     </Link>                </div>
             </Container>
