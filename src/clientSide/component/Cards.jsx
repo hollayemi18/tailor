@@ -87,8 +87,6 @@ const Cards = () => {
                     <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                         {tape}
-
-
                         </div>
                         <p className="mt-2 text-sm font-black text-teal-500">Measurement</p>
                     </div>
@@ -98,7 +96,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                             {history}
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">History</p>
+                        <p className="mt-2 text-sm font-black text-teal-500">female style</p>
                     </div>
                     </Link>                </div>
             </Container>
