@@ -14,7 +14,7 @@ const Cards = () => {
     <div>
           <Container className="wow fadeInUp relative">
             
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-4 bg-white border w-full border-gray-200 border-opacity-50 
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-2 bg-white border w-full border-gray-200 border-opacity-50 
                 shadow-2xl rounded-xl">
                     <Link>
                       <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
@@ -23,7 +23,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Orders</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">Orders</p>
                     </div>
                     </Link>
                     <Link>
@@ -33,7 +33,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Measurement</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">Measurement</p>
                     </div>
                     </Link>
                     <Link>
@@ -41,7 +41,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                             {history}
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">History</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">History</p>
                     </div>
                     </Link>
                     <Link>
@@ -51,7 +51,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Male Order</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">Male Order</p>
                     </div>
                     </Link>
                     <Link>
@@ -61,7 +61,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Female order</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">Female order</p>
                     </div>
                     </Link>
                     <Link>
