@@ -1,6 +1,4 @@
-import {useState} from 'react'
 import { Container } from "../../layouts/utils";
-import avatar from  '../../image/avatar.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping, faBook, faFolderOpen} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'

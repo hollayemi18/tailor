@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import ImageCard from '../imageComponet/ImageCard';
 import ImageSearch from '../imageComponet/ImageSearch';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 function Explore() {
   const [images, setImages] = useState([]);
