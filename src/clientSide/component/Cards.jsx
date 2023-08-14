@@ -14,7 +14,7 @@ const Cards = () => {
     <div>
           <Container className="wow fadeInUp relative">
             
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-2 bg-white border w-full border-gray-200 border-opacity-50 
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-1 bg-white border w-full border-gray-200 border-opacity-50 
                 shadow-2xl rounded-xl">
                     <Link>
                       <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
