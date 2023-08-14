@@ -21,14 +21,12 @@ function Explore() {
 
   return (
     <div className="container mx-auto">
-         <Link to="/" className="ml-4 mt-3" >
-               <h2 className=" font-serif font-semibold text-indigo-600 md:text-4xl text-2xl">Ease </h2>       
-             </Link>
+       
       <ImageSearch searchText={(text) => setTerm(text)} />
 
       {!isLoading && images.length === 0 && <h1 className="text-5xl text-center mx-auto mt-32">No Images Found</h1> }
 
-      {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1> : <div className="grid grid-cols-3 gap-4">
+      {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32 hidden">Loading...</h1> : <div className="grid grid-cols-3 gap-4">
         {images.map(image => (
           <ImageCard key={image.id} image={image} />
         ))}

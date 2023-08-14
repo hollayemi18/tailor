@@ -1,84 +1,108 @@
 import {useState} from 'react'
+import { Container } from "../../layouts/utils";
 import avatar from  '../../image/avatar.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShirt ,faFolder} from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping, faBook, faFolderOpen} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-const  cloth = <FontAwesomeIcon icon={faShirt} fade size="lg" />
-const explore  = <FontAwesomeIcon icon={faFolder} flip size="2xl" />
-
+//const  cloth = <FontAwesomeIcon icon={faShirt} fade size="lg" />
+const order  = <FontAwesomeIcon icon={faBagShopping} size='2xl' />
+const tape = <FontAwesomeIcon icon={faBook } size='2xl' />
+const history  = <FontAwesomeIcon icon={faFolderOpen} size='2xl' />
 const Cards = () => {
  
   return (
-  <div className="w-full grid mt-10 grid-cols-1 px-10 md:flex flex-row gap-2 pb-16 text-indigo-900">
-                    <Link  style={{ backgroundImage: "url('/images/banner-clock.png')" }}
-                    className="transition-all duration-300 border border-indigo-200 rounded-2xl  p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
-                           
-                            <div > 
-                                  {cloth}
-                            </div>
-                        <div className="flex  justify-center">
-                          
-                            <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500
-                             dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500
-                              dark:focus:ring-blue-800">My Order's</button>
+    <div>
+          <Container className="wow fadeInUp relative">
+            
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-4 bg-white border w-full border-gray-200 border-opacity-50 
+                shadow-2xl rounded-xl">
+                    <Link>
+                      <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        {order}
+
+
                         </div>
-                   
-                        <p className="max-w-lg font-black">
-                           
-                            View Orders And Track Progress Of Orders
-                        </p>
+                        <p className="mt-2 text-sm font-black text-teal-500">Orders</p>
+                    </div>
                     </Link>
-                     <div  style={{backgroundRepeat: "no-repeat" ,backgroundImage: "url('/images/banner-map.png') "  }}
-                    className="transition-all duration-300 border border-indigo-200 rounded-2xl  p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
-                           
-                            <div>
-                                  {explore}
-                            </div>
-                        <div className="flex  justify-center">
-                          
-                            <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500
-                             dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500
-                              dark:focus:ring-blue-800">Explore</button>
+                    <Link>
+                    <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        {tape}
+
+
                         </div>
-                   
-                        <p className="max-w-lg font-black">
-                           
-                            Explore styles and Add to cart
-                        </p>
+                        <p className="mt-2 text-sm font-black text-teal-500">Measurement</p>
                     </div>
-                     <div  style={{backgroundRepeat: "no-repeat" ,backgroundImage: "url('/images/footer-bg.png') "  }}
-                    className="transition-all duration-300 border border-indigo-200 rounded-2xl  p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
-                           <div>
-                            
-                            </div>
-                        <div className="flex  justify-center">
-                          
-                            <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500
-                             dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500
-                              dark:focus:ring-blue-800">My Measurement</button>
+                    </Link>
+                    <Link>
+                    <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                            {history}
                         </div>
-                   
-                        <p className="max-w-lg font-black">
-                           
-                            Input Measurement and learn how to measure 
-                        </p>
+                        <p className="mt-2 text-sm font-black text-teal-500">History</p>
                     </div>
-                    <div  style={{ backgroundImage: "url('/images/banner-box.png')" }}
-                    className="transition-all duration-300 border border-indigo-200 rounded-2xl  p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
-                           
-                        <div className="flex  justify-center">
-                          
-                            <button type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500
-                             dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500
-                              dark:focus:ring-blue-800">Packages</button>
+                    </Link>
+                    <Link>
+                      <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        {order}
+
+
                         </div>
-                   
-                        <p className="max-w-lg font-black" >
-                           
-                        View types of package for more explore 
-                        </p>
+                        <p className="mt-2 text-sm font-black text-teal-500">Orders</p>
                     </div>
+                    </Link>
+                    <Link>
+                    <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        {tape}
+
+
+                        </div>
+                        <p className="mt-2 text-sm font-black text-teal-500">Measurement</p>
                     </div>
+                    </Link>
+                    <Link>
+                    <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                            {history}
+                        </div>
+                        <p className="mt-2 text-sm font-black text-teal-500">History</p>
+                    </div>
+                    </Link>
+
+                    <Link>
+                      <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        {order}
+
+
+                        </div>
+                        <p className="mt-2 text-sm font-black text-teal-500">Orders</p>
+                    </div>
+                    </Link>
+                    <Link>
+                    <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        {tape}
+
+
+                        </div>
+                        <p className="mt-2 text-sm font-black text-teal-500">Measurement</p>
+                    </div>
+                    </Link>
+                    <Link>
+                    <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                            {history}
+                        </div>
+                        <p className="mt-2 text-sm font-black text-teal-500">History</p>
+                    </div>
+                    </Link>                </div>
+            </Container>
+    </div>
   )
 }
 

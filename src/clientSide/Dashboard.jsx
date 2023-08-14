@@ -5,6 +5,7 @@ import Bottom from './Bottom'
 import Navbar from './component/layouts/Navbar'
 import Cards from './component/Cards'
 import Footer from '../pages/Footer'
+import Explore from './utils/Explore'
 function Dashboard() {
 const navigate = useNavigate()
 
@@ -23,6 +24,7 @@ const navigate = useNavigate()
   return (
    <div>
             <Navbar />
+            <Explore />
             <Cards />
             <Footer />
             <Bottom />
