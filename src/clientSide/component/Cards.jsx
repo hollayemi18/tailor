@@ -69,7 +69,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                             {history}
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">History</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">Material Explore</p>
                     </div>
                     </Link>
 
@@ -80,7 +80,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">Materials</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">Male style explore</p>
                     </div>
                     </Link>
                     <Link>
@@ -88,7 +88,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                         {tape}
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500"> styles</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">female styles explore </p>
                     </div>
                     </Link>
                     <Link>
@@ -96,7 +96,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                             {history}
                         </div>
-                        <p className="mt-2 text-sm font-black text-teal-500">styles</p>
+                        <p className="mt-2  text-xs font-black text-teal-500">children styles explore</p>
                     </div>
                     </Link>                </div>
             </Container>
