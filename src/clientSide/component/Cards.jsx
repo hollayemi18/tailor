@@ -3,52 +3,55 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBagShopping,faShirt,faPerson,faPersonDress,
     faChildReaching,faPersonPregnant, faChalkboardUser, faBook, faFolderOpen} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-const  cloth = <FontAwesomeIcon icon={faShirt} size="2xl" />
-const order  = <FontAwesomeIcon icon={faBagShopping} size='2xl' />
-const tape = <FontAwesomeIcon icon={faBook } size='2xl' />
-const history  = <FontAwesomeIcon icon={faFolderOpen} size='2xl' />
-const person = <FontAwesomeIcon icon={faPerson}  size="2xl"/>
-const search = <FontAwesomeIcon icon={faChalkboardUser} size="2xl"/>
-const female =<FontAwesomeIcon icon={faPersonDress} size="2xl" />
-const thin  = <FontAwesomeIcon icon={faPersonPregnant} size="2xl" />
-const children  =<FontAwesomeIcon icon={faChildReaching}  size="2xl"/>
+const  cloth = <FontAwesomeIcon icon={faShirt} size="1xl" />
+const order  = <FontAwesomeIcon icon={faBagShopping} size='1xl' />
+const tape = <FontAwesomeIcon icon={faBook } size='1xl' />
+const history  = <FontAwesomeIcon icon={faFolderOpen} size='1xl' />
+const person = <FontAwesomeIcon icon={faPerson}  size="1xl"/>
+const search = <FontAwesomeIcon icon={faChalkboardUser} size="1xl"/>
+const female =<FontAwesomeIcon icon={faPersonDress} size="1xl" />
+const thin  = <FontAwesomeIcon icon={faPersonPregnant} size="1xl" />
+const children  =<FontAwesomeIcon icon={faChildReaching}  size="1xl"/>
 
 const Cards = () => {
  
   return (
     <div>
           <Container className="wow fadeInUp relative">
-            
-                <div className="grid grid-cols-3 md:grid-cols-4 gap-1 bg-white border w-full border-gray-200 border-opacity-50 
-                shadow-2xl rounded-xl">
-                    <Link>
+            <div className="grid grid-cols-3 md:grid-cols-4 gap-1 border-teal-500-400 border w-full bg-emerald-700 border-opacity-50 
+                shadow-1xl rounded-xl">
+                     <Link>
                       <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
-                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-l-3xl shadow-lg ">
                         {order}
 
 
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500"> Manager Orders</p>
+                        <p className="mt-2 text-xs font-black  text-white"> Manager Orders</p>
                     </div>
                     </Link>
                     <Link>
                     <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
-                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-none shadow-lg ">
                         {tape}
 
 
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">Measurement</p>
+                        <p className="mt-2 text-xs font-black  text-white">Measurement</p>
                     </div>
                     </Link>
                     <Link>
                     <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
-                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
+                        <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-r-3xl shadow-lg ">
                             {history}
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">History</p>
+                        <p className="mt-2 text-xs font-black  text-white">History</p>
                     </div>
-                    </Link>
+                    </Link> 
+                </div>
+                <div className="grid grid-cols-3 md:grid-cols-4 gap-1 mt-6 border-emerald-950 bg-white border w-full border-opacity-50 
+                shadow-1xl rounded-xl">
+                   
                     <Link>
                       <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
@@ -56,7 +59,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">Male Order</p>
+                        <p className="mt-2 text-xs font-black text-emerald-900">Male Order</p>
                     </div>
                     </Link>
                     <Link>
@@ -66,7 +69,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">Female order</p>
+                        <p className="mt-2 text-xs font-black text-emerald-900">Female order</p>
                     </div>
                     </Link>
                     <Link>
@@ -74,7 +77,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                             {search}
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">Material Explore</p>
+                        <p className="mt-2 text-xs font-black text-emerald-900">Material Explore</p>
                     </div>
                     </Link>
 
@@ -85,7 +88,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">Male styles explore</p>
+                        <p className="mt-2 px-2 text-xs font-black text-emerald-900">Male styles explore</p>
                     </div>
                     </Link>
                     <Link>
@@ -93,7 +96,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                         {thin}
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">female styles explore </p>
+                        <p className="mt-2 text-xs font-black text-emerald-900">female styles explore </p>
                     </div>
                     </Link>
                     <Link>
@@ -101,7 +104,7 @@ const Cards = () => {
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                             {children}
                         </div>
-                        <p className="mt-2  text-xs font-black text-teal-500">children styles explore</p>
+                        <p className="mt-2  text-xs font-black text-emerald-900">children styles explore</p>
                     </div>
                     </Link>                </div>
             </Container>
