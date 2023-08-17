@@ -1,11 +1,15 @@
 import { Container } from "../../layouts/utils";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBagShopping, faBook, faFolderOpen} from '@fortawesome/free-solid-svg-icons'
+import { faBagShopping,faShirt,faPerson,faPersonDress, faChalkboardUser, faBook, faFolderOpen} from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-//const  cloth = <FontAwesomeIcon icon={faShirt} fade size="lg" />
+const  cloth = <FontAwesomeIcon icon={faShirt} size="2xl" />
 const order  = <FontAwesomeIcon icon={faBagShopping} size='2xl' />
 const tape = <FontAwesomeIcon icon={faBook } size='2xl' />
 const history  = <FontAwesomeIcon icon={faFolderOpen} size='2xl' />
+const person = <FontAwesomeIcon icon={faPerson}  size="2xl"/>
+const search = <FontAwesomeIcon icon={faChalkboardUser} size="2xl"/>
+const female =<FontAwesomeIcon icon={faPersonDress} size="2xl" />
+const thin  = <FontAwesomeIcon icon={faPersonDress} thin size="2xl" />
 const Cards = () => {
  
   return (
@@ -21,7 +25,7 @@ const Cards = () => {
 
 
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">Orders</p>
+                        <p className="mt-2 text-xs font-black text-teal-500"> Manager Orders</p>
                     </div>
                     </Link>
                     <Link>
@@ -45,7 +49,7 @@ const Cards = () => {
                     <Link>
                       <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
-                        {order}
+                        {person}
 
 
                         </div>
@@ -55,7 +59,7 @@ const Cards = () => {
                     <Link>
                     <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
-                        {tape}
+                        {female}
 
 
                         </div>
@@ -65,7 +69,7 @@ const Cards = () => {
                     <Link>
                     <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
-                            {history}
+                            {search}
                         </div>
                         <p className="mt-2 text-xs font-black text-teal-500">Material Explore</p>
                     </div>
@@ -74,17 +78,17 @@ const Cards = () => {
                     <Link>
                       <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
-                        {order}
+                        {cloth}
 
 
                         </div>
-                        <p className="mt-2 text-xs font-black text-teal-500">Male style explore</p>
+                        <p className="mt-2 text-xs font-black text-teal-500">Male styles explore</p>
                     </div>
                     </Link>
                     <Link>
                     <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
                         <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
-                        {tape}
+                        {thin}
                         </div>
                         <p className="mt-2 text-xs font-black text-teal-500">female styles explore </p>
                     </div>
