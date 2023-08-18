@@ -25,6 +25,7 @@ const Register = () => {
         if (!password) {
             return toast.error("All fields are required");
         }
+
         await axios
             .post(
                 "http://localhost:8080/register",
@@ -35,12 +36,20 @@ const Register = () => {
                 },
                 { withCredentials: true }
             )
-            .then(reg => {
-                toast.success("successfully registered");
-                navigate("/login");
+            .then(res => {
+                if (res.data === "not successful") {
+                    toast.error("not Successfully register");
+                } else if (res.data === "Email is registered") {
+                    toast.error("email existed");
+                } else if (res.data === "username is taken") {
+                    toast.error("username is taken");
+                } else {
+                    toast.success("Successfully register");
+                    navigate("/login");
+                }
             })
             .catch(error => {
-                return toast.error("something went wrong");
+                return error;
             });
     };
     return (
@@ -50,7 +59,7 @@ const Register = () => {
                 start an adventure of a lifetime of fashion sense
             </p>
 
-            <form className="space-y-5" onSubmit={register}>
+            <form className="space-y-5" method="POST" onSubmit={register}>
                 <ToastContainer />
                 <div>
                     <Input
