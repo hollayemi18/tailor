@@ -21,21 +21,22 @@ const Login = () => {
             return toast.error("All fields are required");
         }
         try {
-            const loginAuth = await axios.post(
-                "http://localhost:8080/login",
-                {
+            await axios
+                .post("http://localhost:8080/login", {
                     email,
                     password
-                },
-                { withCredentials: true }
-            );
-
-            if (!loginAuth) {
-                toast.error("Email or Password is Incorrect");
-            } else {
-                toast.success("Successful connection");
-                navigate("/dashboard");
-            }
+                })
+                .then(response => {
+                    if (response.data === "wrong password or username") {
+                        toast.error("not Successfully register");
+                    } else if (response.data === "wrong password or username") {
+                        toast.error("not Successfully register");
+                    }
+                    toast.success("Successfully login");
+                    const token = response.data.token;
+                    localStorage.setItem("token", token);
+                    navigate("/dashboard");
+                });
         } catch (error) {
             toast.error("Email or Password is Incorrect");
         }
