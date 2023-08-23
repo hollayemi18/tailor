@@ -10,6 +10,7 @@ import ResetPassword from "./pages/ResetPassword";
 import Explore from "./clientSide/utils/Explore";
 import Blog from "./clientSide/utils/Blog";
 import Ease from "./clientSide/utils/Ease";
+import Profile from "./clientSide/page/Profile";
 const App = () => {
     return (
         <Router>
@@ -24,6 +25,7 @@ const App = () => {
                 <Route path="/explore" element={<Explore />} />
                 <Route path="/ease" element={<Ease />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/profile" element={<Profile />} />
             </Routes>
         </Router>
     );
