@@ -40,6 +40,7 @@ const Navbar = () => {
                         Hi
                         <span className="text-emerald-800 font-serif ml-2">{username}!</span>
                     </em>
+
                     <i className="text-teal-700 font-serif">
                         welcome
                         <span className="text-teal-700 font-serif ml-1">back</span>
