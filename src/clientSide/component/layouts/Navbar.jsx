@@ -8,6 +8,7 @@ import axios from "axios";
 const notify = <FontAwesomeIcon icon={faCartPlus} size="xl" />;
 const bell = <FontAwesomeIcon icon={faBell} size="xl" />;
 const Navbar = () => {
+    const local = process.env.REACT_APP_DEV_MODE;
     //const [email, setEmail] = useState("");
     //const [password, setPassword] = useState("");
     const [username, setUsername] = useState("");
@@ -16,7 +17,9 @@ const Navbar = () => {
         // Fetch user information using token from your Express API
         const token = localStorage.getItem("token"); // Assuming you have stored the token after login
         axios
-            .get("http://localhost:8080/user/", { headers: { Authorization: `Bearer ${token}` } })
+            .get(`${local}user`, {
+                headers: { Authorization: `Bearer ${token}` }
+            })
             .then(response => {
                 setUsername(response.data);
             })

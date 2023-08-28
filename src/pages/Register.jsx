@@ -14,6 +14,8 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     // const [reg, setReg] = useState("");
+    const local = process.env.REACT_APP_DEV_MODE;
+
     const register = async e => {
         e.preventDefault();
         if (!email) {
@@ -28,7 +30,7 @@ const Register = () => {
 
         await axios
             .post(
-                "http://localhost:8080/register",
+                `${local}register`,
                 {
                     username,
                     email,

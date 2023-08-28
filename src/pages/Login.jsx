@@ -10,6 +10,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const local = process.env.REACT_APP_DEV_MODE;
 
     const login = async e => {
         e.preventDefault();
@@ -22,7 +23,7 @@ const Login = () => {
         }
         try {
             await axios
-                .post("http://localhost:8080/login", {
+                .post(`${local}login`, {
                     email,
                     password
                 })
