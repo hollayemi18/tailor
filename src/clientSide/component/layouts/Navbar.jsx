@@ -36,10 +36,7 @@ const Navbar = () => {
                     alt="DP"
                 />
                 <div className="mt-6 ml-2 flex flex-col">
-                    <em className="text-1xl">
-                        Hi
-                        <span className="text-emerald-800 font-serif ml-2">{username}!</span>
-                    </em>
+                    <em className="text-1xl">Hi</em>
 
                     <i className="text-teal-700 font-serif">
                         welcome
