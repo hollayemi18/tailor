@@ -10,7 +10,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const local = process.env.REACT_APP_DEV_MODE;
+    const local = process.env.REACT_APP_PRO_MODE;
 
     const login = async e => {
         e.preventDefault();

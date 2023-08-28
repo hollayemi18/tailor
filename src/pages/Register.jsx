@@ -14,7 +14,7 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     // const [reg, setReg] = useState("");
-    const local = process.env.REACT_APP_DEV_MODE;
+    const local = process.env.REACT_APP_PRO_MODE;
 
     const register = async e => {
         e.preventDefault();

@@ -8,7 +8,7 @@ import axios from "axios";
 const notify = <FontAwesomeIcon icon={faCartPlus} size="xl" />;
 const bell = <FontAwesomeIcon icon={faBell} size="xl" />;
 const Navbar = () => {
-    const local = process.env.REACT_APP_DEV_MODE;
+    const local = process.env.REACT_APP_PRO_MODE;
     //const [email, setEmail] = useState("");
     //const [password, setPassword] = useState("");
     const [username, setUsername] = useState("");
