@@ -8,12 +8,9 @@ import axios from "axios";
 const notify = <FontAwesomeIcon icon={faCartPlus} size="xl" />;
 const bell = <FontAwesomeIcon icon={faBell} size="xl" />;
 const Navbar = () => {
-    const local = process.env.REACT_APP_PRO_MODE;
-    //const [email, setEmail] = useState("");
-    //const [password, setPassword] = useState("");
     const [username, setUsername] = useState("");
-    //const [token, setToken] = useState("");
     useEffect(() => {
+        const local = process.env.REACT_APP_PRO_MODE;
         // Fetch user information using token from your Express API
         const token = localStorage.getItem("token"); // Assuming you have stored the token after login
         axios
@@ -37,7 +34,7 @@ const Navbar = () => {
                 />
                 <div className="mt-6 ml-2 flex flex-col">
                     <em className="text-1xl">Hi</em>
-
+                    <span className="text-teal-700 font-serif">{username}</span>
                     <i className="text-teal-700 font-serif">
                         welcome
                         <span className="text-teal-700 font-serif ml-1">back</span>
