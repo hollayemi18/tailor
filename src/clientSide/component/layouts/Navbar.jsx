@@ -36,13 +36,13 @@ const Navbar = () => {
                 />
                 <div className="mt-6 ml-2 flex flex-col">
                     <em className="text-1xl">Hi {wave}</em>
-                    <i className="text-teal-700 font-serif">
+                    <i className="text-indigo-700 font-serif">
                         welcome
-                        <span className="text-teal-700 font-serif ml-1">back</span>
+                        <span className="text-indigo-700 font-serif ml-1">back</span>
                     </i>
                 </div>
             </div>
-            <div className="mt-8 mr-5 hover:bg-white grid bg-transparent grid-cols-2 gap-6 text-teal-800">
+            <div className="mt-8 mr-5 hover:bg-white grid bg-transparent grid-cols-2 gap-6 text-indigo-800">
                 <Link> {notify}</Link>
                 <Link> {bell}</Link>
             </div>
