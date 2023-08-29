@@ -27,11 +27,11 @@ const Cards = () => {
         <div>
             <Container className="wow fadeInUp relative">
                 <div
-                    className="grid grid-cols-3 md:grid-cols-4 gap-1 border-teal-500-400 border w-full bg-emerald-700 border-opacity-50 
+                    className="grid grid-cols-3 md:grid-cols-4 gap-1 border-indigo-500-400 border w-full bg-indigo-700 border-opacity-50 
                 shadow-1xl rounded-xl"
                 >
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-l-3xl shadow-lg ">
                                 {order}
                             </div>
@@ -39,7 +39,7 @@ const Cards = () => {
                         </div>
                     </Link>
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-none shadow-lg ">
                                 {tape}
                             </div>
@@ -47,7 +47,7 @@ const Cards = () => {
                         </div>
                     </Link>
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-r-3xl shadow-lg ">
                                 {history}
                             </div>
@@ -56,61 +56,61 @@ const Cards = () => {
                     </Link>
                 </div>
                 <div
-                    className="grid grid-cols-3 md:grid-cols-4 gap-1 mt-6 mb-24 border-emerald-950 bg-white border w-full border-opacity-50 
+                    className="grid grid-cols-3 md:grid-cols-4 gap-1 mt-6 mb-24 border-indigo-950 bg-white border w-full border-opacity-50 
                 shadow-1xl rounded-xl"
                 >
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                                 {person}
                             </div>
-                            <p className="mt-2 text-xs font-black text-emerald-900">Male Order</p>
+                            <p className="mt-2 text-xs font-black text-indigo-900">Male Order</p>
                         </div>
                     </Link>
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                                 {female}
                             </div>
-                            <p className="mt-2 text-xs font-black text-emerald-900">Female order</p>
+                            <p className="mt-2 text-xs font-black text-indigo-900">Female order</p>
                         </div>
                     </Link>
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                                 {search}
                             </div>
-                            <p className="mt-2 text-xs font-black text-emerald-900">
+                            <p className="mt-2 text-xs font-black text-indigo-900">
                                 Material Explore
                             </p>
                         </div>
                     </Link>
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                                 {cloth}
                             </div>
-                            <p className="mt-2 px-2 text-xs font-black text-emerald-900">
+                            <p className="mt-2 px-2 text-xs font-black text-indigo-900">
                                 Male styles explore
                             </p>
                         </div>
                     </Link>
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                                 {thin}
                             </div>
-                            <p className="mt-2 text-xs font-black text-emerald-900">
+                            <p className="mt-2 text-xs font-black text-indigo-900">
                                 female styles explore{" "}
                             </p>
                         </div>
                     </Link>
                     <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-teal-800 font-medium">
+                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                                 {children}
                             </div>
-                            <p className="mt-2  text-xs font-black text-emerald-900">
+                            <p className="mt-2  text-xs font-black text-indigo-900">
                                 children styles explore
                             </p>
                         </div>

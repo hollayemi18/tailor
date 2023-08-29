@@ -3,11 +3,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import avatar from "../../../image/avatar.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartPlus, faBell, faWaveSquare } from "@fortawesome/free-solid-svg-icons";
+import { faCartPlus, faBell, faHand } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 const notify = <FontAwesomeIcon icon={faCartPlus} size="xl" />;
 const bell = <FontAwesomeIcon icon={faBell} size="xl" />;
-const wave = <FontAwesomeIcon icon={faWaveSquare} size="xl" />;
+const wave = <FontAwesomeIcon icon={faHand} size="xl" />;
 
 const Navbar = () => {
     const [username, setUsername] = useState("");
