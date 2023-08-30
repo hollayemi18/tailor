@@ -56,7 +56,7 @@ const Cards = () => {
                     </Link>
                 </div>
                 <div
-                    className="grid grid-cols-3 md:grid-cols-4 gap-1 mt-6 mb-24 border-indigo-950 bg-white border w-full border-opacity-50 
+                    className="grid grid-cols-3 md:grid-cols-4 gap-1 mt-6 mb-8 border-indigo-950 bg-white border w-full border-opacity-50 
                 shadow-1xl rounded-xl"
                 >
                     <Link>
