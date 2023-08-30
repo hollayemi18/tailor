@@ -20,8 +20,8 @@ const ImageSearch = ({ searchText }) => {
                         placeholder="Explore market....."
                     />
                     <button
-                        className="flex-shrink-0 bg-emerald-900 rounded-2xl  hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm 
-            border-2 text-white py-1 px-2 "
+                        className="flex-shrink-0  rounded-2xl  hover:bg-indigo-700 text-sm 
+            border-2 text-indigo-800 py-1 px-2 "
                         type="submit"
                     >
                         Search
