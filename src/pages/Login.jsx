@@ -10,7 +10,7 @@ const Login = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const local = process.env.REACT_APP_PRO_MODE;
+    const local = process.env.REACT_APP_DEV_MODE;
 
     const login = async e => {
         e.preventDefault();
@@ -44,11 +44,18 @@ const Login = () => {
     };
 
     return (
-        <div className="flex flex-col gap-2 mx-10 mb-96 md:mx-72 pt-10">
+        <div className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-5">
+            <div>
+                <Link to="/" className="text-center">
+                    <h2 className=" font-serif font-semibold text-indigo-600 md:text-4xl text-2xl">
+                        EASE
+                    </h2>
+                </Link>
+            </div>
             <h3 className="text-center text-xl font-semibold text-black">Login to Account</h3>
-            <p className="text-center text-sm mt-2 mb-10">
-                Please sign-in to your account and continue the adventure.
-            </p>
+            <i className="text-center text-sm mt-2 mb-4">
+                Please sign-in to your account to continue the adventure.
+            </i>
 
             <form className="space-y-5" onSubmit={login}>
                 <ToastContainer />

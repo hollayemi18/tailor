@@ -110,7 +110,7 @@ const Cards = () => {
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-full shadow-lg ">
                                 {children}
                             </div>
-                            <p className="mt-2  text-xs font-black text-indigo-900">
+                            <p className="mt-2  text-xs font-black text-black">
                                 children styles explore
                             </p>
                         </div>

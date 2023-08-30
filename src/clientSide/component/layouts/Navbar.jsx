@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import React from "react";
 import { Link } from "react-router-dom";
 import avatar from "../../../image/avatar.jpg";
@@ -10,9 +10,9 @@ const bell = <FontAwesomeIcon icon={faBell} size="xl" />;
 const wave = <FontAwesomeIcon icon={faHand} size="xl" />;
 
 const Navbar = () => {
-    const [username, setUsername] = useState("");
+    //const [username, setUsername] = useState("");
     useEffect(() => {
-        const local = process.env.REACT_APP_PRO_MODE;
+        const local = process.env.REACT_APP_DEV_MODE;
         // Fetch user information using token from your Express API
         const token = localStorage.getItem("token"); // Assuming you have stored the token after login
         axios
@@ -20,7 +20,7 @@ const Navbar = () => {
                 headers: { Authorization: `Bearer ${token}` }
             })
             .then(response => {
-                setUsername(response.data);
+                //setUsername(response.data);
             })
             .catch(error => {
                 console.error("Error fetching user data:", error);

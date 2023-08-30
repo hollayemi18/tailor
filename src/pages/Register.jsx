@@ -55,11 +55,18 @@ const Register = () => {
             });
     };
     return (
-        <div className="flex flex-col gap-2 mx-10 mb-96 md:mx-72 pt-10">
+        <div className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-4">
+            <div>
+                <Link to="/" className="text-center ">
+                    <h2 className=" font-serif font-semibold text-indigo-600 md:text-4xl text-2xl">
+                        EASE
+                    </h2>
+                </Link>
+            </div>
             <h3 className="text-center text-xl font-semibold text-black">Create New Account</h3>
-            <p className="text-center text-sm mt-2 mb-10">
+            <i className="text-center text-sm mt-2 mb-2">
                 start an adventure of a lifetime of fashion sense
-            </p>
+            </i>
 
             <form className="space-y-5" method="POST" onSubmit={register}>
                 <ToastContainer />

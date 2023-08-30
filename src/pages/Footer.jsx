@@ -8,14 +8,14 @@ import {
 import { Container } from "../layouts/utils";
 
 const Footer = () => {
-    const date = new Date()
-    const year = date.getFullYear()
-    console.log(year)
+    const date = new Date();
+    const year = date.getFullYear();
+    console.log(year);
     return (
         <footer className="bg-[#FBFBFF] py-24 mt-24 border-t border-indigo-100">
             <Container>
                 <img
-                    src="/images/banter.png"
+                    src="/images/homepage2.jpg"
                     className="w-full object-center object-cover border-b"
                     alt=""
                 />
