@@ -12,15 +12,15 @@ import {
     faFolderOpen
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-const cloth = <FontAwesomeIcon icon={faShirt} size="1xl" />;
+const cloth = <FontAwesomeIcon icon={faShirt} size="1xl" spin />;
 const order = <FontAwesomeIcon icon={faBagShopping} size="1xl" />;
 const tape = <FontAwesomeIcon icon={faBook} size="1xl" />;
 const history = <FontAwesomeIcon icon={faFolderOpen} size="1xl" />;
-const person = <FontAwesomeIcon icon={faPerson} size="1xl" />;
-const search = <FontAwesomeIcon icon={faChalkboardUser} size="1xl" />;
-const female = <FontAwesomeIcon icon={faPersonDress} size="1xl" />;
-const thin = <FontAwesomeIcon icon={faPersonPregnant} size="1xl" />;
-const children = <FontAwesomeIcon icon={faChildReaching} size="1xl" />;
+const person = <FontAwesomeIcon icon={faPerson} size="1xl" flip />;
+const search = <FontAwesomeIcon icon={faChalkboardUser} size="1xl" beat />;
+const female = <FontAwesomeIcon icon={faPersonDress} size="1xl" shake />;
+const thin = <FontAwesomeIcon icon={faPersonPregnant} size="1xl" fade />;
+const children = <FontAwesomeIcon icon={faChildReaching} size="1xl" bounce />;
 
 const Cards = () => {
     return (
