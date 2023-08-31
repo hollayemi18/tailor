@@ -44,7 +44,10 @@ const Login = () => {
     };
 
     return (
-        <div className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-5">
+        <div
+            className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-4 relative bg-auto bg-no-repeat"
+            style={{ backgroundImage: "url('/images/homepage1.png')" }}
+        >
             <div>
                 <Link to="/" className="text-center">
                     <h2 className=" font-serif font-semibold text-indigo-600 md:text-4xl text-2xl">
