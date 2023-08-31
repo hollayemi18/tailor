@@ -12,15 +12,15 @@ const Home = () => {
 
             <Banner />
 
-            <Container className="wow fadeInUp relative -mt-[110px]">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 bg-white border border-gray-200 border-opacity-50 shadow-2xl rounded-xl">
-                    <div className="text-center py-10 lg:py-16 space-y-3 text-indigo-600 font-medium">
-                        <div className="flex  items-center justify-center ">
+            <Container className="wow slideInLeft relative -mt-[200px]">
+                <div className="grid grid-cols-2 md:grid-cols-4 border-green-300  bg-white border shadow-2xl rounded-xl">
+                    <div className="text-center py-2 lg:py-16 space-y-3  text-indigo-600 font-medium">
+                        <div className="flex  items-center justify-center  wow fadeInRight">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                className="w-10 h-10"
+                                className="w-5 h-7"
                             >
                                 <path d="M10.5 18a.75.75 0 000 1.5h3a.75.75 0 000-1.5h-3z" />
                                 <path
@@ -30,30 +30,32 @@ const Home = () => {
                                 />
                             </svg>
                         </div>
-                        <p className="mt-2 text-sm font-black text-color1">ONLINE ORDER</p>
+                        <p className="mt-1 text-sm font-normal wow fadeInLeft text-color1">
+                            ONLINE ORDER
+                        </p>
                     </div>
-                    <div className="text-center py-10 lg:py-16 space-y-3 text-indigo-600 font-medium">
-                        <div className="flex  items-center justify-center ">
+                    <div className="text-center py-2 lg:py-16 space-y-3 text-indigo-700 font-medium">
+                        <div className="flex  items-center justify-center  wow slide-right">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                className="w-10 h-10"
+                                className="w-5 h-7"
                             >
                                 <path d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h12V6.375c0-1.036-.84-1.875-1.875-1.875h-8.25zM13.5 15h-12v2.625c0 1.035.84 1.875 1.875 1.875h.375a3 3 0 116 0h3a.75.75 0 00.75-.75V15z" />
                                 <path d="M8.25 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0zM15.75 6.75a.75.75 0 00-.75.75v11.25c0 .087.015.17.042.248a3 3 0 015.958.464c.853-.175 1.522-.935 1.464-1.883a18.659 18.659 0 00-3.732-10.104 1.837 1.837 0 00-1.47-.725H15.75z" />
                                 <path d="M19.5 19.5a1.5 1.5 0 10-3 0 1.5 1.5 0 003 0z" />
                             </svg>
                         </div>
-                        <p className="mt-2 text-sm font-black text-color1">PICKUP AND DELIVERY</p>
+                        <p className="mt-2 text-sm font-normal text-color1">PICKUP & DELIVERY</p>
                     </div>
-                    <div className="text-center py-10 lg:py-16 space-y-3 text-indigo-600 font-medium">
+                    <div className="text-center py-8 lg:py-16 space-y-3 text-indigo-600 font-medium">
                         <div className="flex  items-center justify-center ">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                className="w-10 h-10"
+                                className="w-5 h-7"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -62,49 +64,51 @@ const Home = () => {
                                 />
                             </svg>
                         </div>
-                        <p className="mt-2 text-sm font-black text-color1">CONVIENCE</p>
+                        <p className="mt-2 text-sm font-normal text-color1">CONVIENCE</p>
                     </div>
-                    <div className="text-center py-10 lg:py-16 space-y-3 text-indigo-600 font-medium">
-                        <div className="flex  items-center justify-center ">
+                    <div className="text-center py-8 lg:py-16 space-y-3 text-indigo-600 font-medium">
+                        <div className="flex  items-center justify-center wow fadeInUp">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                className="w-10 h-10"
+                                className="w-5 h-7"
                             >
                                 <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-8.4 8.4a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32l8.4-8.4z" />
                                 <path d="M5.25 5.25a3 3 0 00-3 3v10.5a3 3 0 003 3h10.5a3 3 0 003-3V13.5a.75.75 0 00-1.5 0v5.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5V8.25a1.5 1.5 0 011.5-1.5h5.25a.75.75 0 000-1.5H5.25z" />
                             </svg>
                         </div>
-                        <p className="mt-2 text-sm font-black text-color1">DESIGN CONSULTATION</p>
+                        <p className="mt-2 text-sm font-normal text-color1">DESIGN CONSULTATION</p>
                     </div>
                 </div>
             </Container>
 
-            <div className="wow fadeInUp text-center bg-gray-200 shadow-2xl text-indigo-900 space-y-4 mt-12 mb-8">
-                <h2 className="text-4xl lg:text-2xl font-bold text-center">Be yourself.</h2>
-                <h4 className="text-3xl sm:text-2xl md:text-5xl lg:text-6xl font-bold">
+            <div className="wow bounceInDown text-center bg-gray-200 shadow-2xl text-indigo-900 space-y-4 mt-12 mb-8">
+                <h2 className="text-2xl lg:text-2xl font-bold text-center">Be yourself.</h2>
+                <h4 className="text-2xl sm:text-2xl md:text-5xl lg:text-6xl font-bold">
                     Know your proportions. <br className="hidden lg:block" />
                 </h4>
                 <div>
-                    <h4 className="text-center"> And have a good tailor.</h4>
+                    <em className="text-center"> And have a good tailor.</em>
                 </div>
-                <p className="text-sm sm:text-base font-medium">
+                <p className="text-sm sm:text-base px-10 font-medium">
                     Sign up to start ordering online and managing your fit details.
                 </p>
-                <Link
-                    to="/register"
-                    className="mx-16 transition-all block text-center  duration-300 px-2
-                          lg:px-4   xl:px-4 font-medium py-1 xl:py-2 border
+                <div className="mt-20 mx-32">
+                    <Link
+                        to="/register"
+                        className="px-4 transition-all block text-center  duration-300
+                          lg:px-4   xl:px-4 font-medium py-2  xl:py-2 border
                           border-indigo-600 bg-indigo-600 text-white rounded-md 
                           focus:outline-none hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
-                >
-                    Sign Up
-                </Link>
+                    >
+                        Sign Up
+                    </Link>
+                </div>
             </div>
 
-            <Container className="wow fadeInUp flex items-center flex-col-reverse xl:flex-col xl:space-y-0 xl:space-x-5  ">
-                <div className="w-full xl:w-1/2">
+            <Container className="wow fadeInLeft pt-3 flex items-center flex-col-reverse xl:flex-col xl:space-y-0  xl:space-x-5  ">
+                <div className="w-full xl:w-1/2 wow bounceInUp">
                     <img
                         src="/images/eas3.jpg"
                         className="h-auto w-full object-contain object-center align-middle mt-16 xl:mt-0"
@@ -112,8 +116,11 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="wow fadeInUp w-full xl:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 text-indigo-900">
-                    <div className="transition-all duration-300 border border-indigo-200 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
+                <div className="wow fadeInLeft w-full xl:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 text-indigo-900">
+                    <div
+                        className="transition-all duration-300 border border-pink-700 rounded-3xl p-12 mx-4 lg:p-8 
+                    text-center flex flex-col space-y-2 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl"
+                    >
                         <div className="flex items-center justify-center">
                             <img src="/images/how1.jpg" alt="" />
                         </div>
@@ -123,7 +130,10 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="wow fadeInUp transition-all duration-300 border border-indigo-200 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
+                    <div
+                        className="wow slideInLeft transition-all duration-300 border border-indigo-200 rounded-3xl
+                     p-12 mx-4 lg:p-8 text-center flex flex-col space-y-2 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl"
+                    >
                         <div className="flex items-center justify-center">
                             <img src="/images/how2.jpg" alt="" />
                         </div>
@@ -135,7 +145,10 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="wow fadeInUp transition-all duration-300 border border-indigo-200 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
+                    <div
+                        className="wow fadeInRight transition-all duration-300 border border-green-600 rounded-3xl 
+                    p-12 lg:p-8 mx-4 text-center flex flex-col space-y-2 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl"
+                    >
                         <div className="flex items-center justify-center">
                             <img src="/images/homepage3.jpg" alt="" />
                         </div>
@@ -147,7 +160,10 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="wow fadeInUp transition-all duration-300 border border-indigo-200 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
+                    <div
+                        className="wow slideInRight transition-all duration-300 border border-indigo-200 
+                    rounded-3xl p-12 mx-4 lg:p-8 text-center flex flex-col space-y-2 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl"
+                    >
                         <div className="flex items-center justify-center">
                             <img src="/images/how4.jpg" alt="" />
                         </div>
@@ -160,8 +176,11 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="wow fadeInUp transition-all duration-300 border border-indigo-200 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
-                        <div className="flex items-center justify-center">
+                    <div
+                        className="wow fadeInUp transition-all duration-300 border border-yellow-300 rounded-3xl p-12  mx-4
+                     lg:p-8 text-center flex flex-col space-y-1 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl"
+                    >
+                        <div className="flex items-center justify-center wow fadeInDown">
                             <img src="/images/how6.jpg" alt="" />
                         </div>
                         <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">
@@ -173,8 +192,12 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="wow fadeInUp transition-all duration-300 border border-indigo-200 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl">
-                        <div className="flex items-center justify-center">
+                    <div
+                        className="wow bounceInDown transition-all duration-300 border
+                     border-indigo-200 rounded-3xl p-12 mx-4 lg:p-8 text-center flex flex-col space-y-1
+                     hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl"
+                    >
+                        <div className="flex items-center justify-center wow fadeInLeft">
                             <img src="/images/eas10.jpg" alt="" />
                         </div>
                         <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">RELAX</h3>
@@ -184,21 +207,24 @@ const Home = () => {
             </Container>
 
             <div
-                className="wow fadeInUp mt-28 pt-10 md:pt-28 pb-52 space-y-8 text-center text-white bg-no-repeat bg-cover bg-center"
+                className="wow fadeInUp mt-28 pt-10 md:pt-28 pb-52 space-y-4 text-center text-white bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: "url('/images/banter.png')" }}
             >
                 <h3 className="wow fadeInUp text-xl md:text-2xl text-green-400 font-bold">
                     Affordable. Great fit. No hassle.
                 </h3>
                 <h1 className="wow fadeInUp text-3xl md:text-4xl xl:text-6xl font-bold">
-                    Fashion sense in <br className="hidden lg:block" /> One Place
+                    Fashion sense in <br className="lg:block" /> One Place
                 </h1>
-                <p className="wow fadeInUp text-white font-medium text-opacity-80 text-sm md:text-base"></p>
+                <p className="wow fadeInleft text-white font-medium text-opacity-80 text-sm md:text-base"></p>
             </div>
 
             <Container className="-mt-[150px] wow fadeInUp">
                 <div className="wow fadeInUp grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-                    <div className="w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 shadow-xl">
+                    <div
+                        className=" wow fadeInLeft w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border
+                     border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
+                    >
                         <div className="flex items-center justify-center">
                             <img src="/images/our-solutions-icon-1.png" alt="" />
                         </div>
@@ -250,8 +276,8 @@ const Home = () => {
             <h1 className="text-center font-extrabold text-3xl my-12 text-indigo-800">
                 <i>Testimony</i>
             </h1>
-            <div className="wow fadeInUp md:flex flex-row my-6 mx-5 bg-slate-100">
-                <div className="max-sm:hidden my-5">
+            <div className="wow bounceInLeft md:flex flex-row my-6 mx-5 bg-slate-100">
+                <div className="max-sm:hidden my-5  ">
                     <MDBCard className="max-sm:hidden">
                         <MDBRipple
                             rippleColor="light"

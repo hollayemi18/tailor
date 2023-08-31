@@ -18,7 +18,7 @@ const Nav = () => {
             <div className="flex space-x-4 items-center justify-evenly px-3 py-0 xl:py-0">
                 <div className="flex items-center space-x-12">
                     <Link to="/" className="flex items-center">
-                        <h2 className=" font-serif font-semibold text-indigo-600 md:text-4xl text-2xl">
+                        <h2 className=" font-serif font-semibold text-indigo-900 md:text-4xl text-2xl">
                             EASE
                         </h2>
                     </Link>

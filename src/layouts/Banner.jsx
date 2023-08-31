@@ -2,24 +2,14 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <section className="w-full overflow-hidden bg-[#f2f3f9] wow fadeInUp">
+        <section className="w-full overflow-hidden bg-[#dee0ec] wow fadeInUp">
             <div
-                className="relative bg-auto bg-no-repeat bg-[top_120px_right] md:bg-[top_150px_right] -mt-16 lg:bg-[top_10px_right]"
+                className="relative bg-auto bg-no-repeat bg-[top_120px_right] md:bg-[top_150px_right] -mt-16 lg:bg-[top_10px_right] text-green-700"
                 style={{ backgroundImage: "url('/images/homepage1.png')" }}
             >
                 <div>
                     <img
-                        className="w-[20%] lg:w-[20%] md:max-w-full h-auto align-middle absolute left-0 bottom-[5%] animate-ripple2"
-                        src="/images/homepage3.jpg"
-                        alt=""
-                    />
-                    <img
-                        className="md:block w-[0%] md:w-[15%] mt-16 xl:w-[19%] h-auto align-middle absolute top-0 left-0"
-                        src="/images/banner-clock.png"
-                        alt=""
-                    />
-                    <img
-                        className="w-[%] mb-10 md:w-[13%] h-auto align-middle absolute left-[calc(48%)] bottom-[12%] animate-ripple2"
+                        className=" mb-10 md:w-[%] h-auto align-middle absolute left-[calc(10%)] bottom-[3%] animate-ripple2 w-21 text-green-700"
                         src="/images/banner-rocket.png"
                         alt=""
                     />

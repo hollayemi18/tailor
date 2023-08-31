@@ -12,11 +12,11 @@ const Footer = () => {
     const year = date.getFullYear();
     console.log(year);
     return (
-        <footer className="bg-[#FBFBFF] py-24 mt-24 border-t border-indigo-100">
+        <footer className="wow fadeInLeft bg-[#f9f9fc] py-24 mt-10border-t border-indigo-100">
             <Container>
                 <img
                     src="/images/homepage2.jpg"
-                    className="w-full object-center object-cover border-b"
+                    className="w-full object-center -mt-20 object-cover border-b"
                     alt=""
                 />
 
