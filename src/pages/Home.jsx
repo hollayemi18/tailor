@@ -220,7 +220,7 @@ const Home = () => {
             </div>
 
             <Container className="-mt-[150px] wow fadeInUp">
-                <div className="wow fadeInUp grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+                <div className="wow fadeInUp grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 gap-6">
                     <div
                         className=" wow fadeInLeft w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border
                      border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
@@ -234,41 +234,30 @@ const Home = () => {
                             payment of order
                         </p>
                     </div>
-
-                    <div className="wow fadeInUp w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 shadow-xl">
+                    <div
+                        className=" wow fadeInLeft w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border
+                     border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
+                    >
                         <div className="flex items-center justify-center">
-                            <img src="/images/our-solutions-icon-2.png" alt="" />
+                            <img src="/images/our-solutions-icon-1.png" alt="" />
                         </div>
-                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">
-                            Communication
-                        </h3>
+                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">Payments</h3>
                         <p className="max-w-lg text-lg text-indigo-900">
-                            Great work etiquette from the team and ability to decipher your need and
-                            wants
+                            Integrated online payment system to manage transaction and for easy
+                            payment of order
                         </p>
                     </div>
-                    <div className="wow fadeInUp w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 shadow-xl">
+                    <div
+                        className=" wow fadeInLeft w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border
+                     border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
+                    >
                         <div className="flex items-center justify-center">
-                            <img src="/images/our-solutions-icon-2.png" alt="" />
+                            <img src="/images/our-solutions-icon-1.png" alt="" />
                         </div>
-                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">
-                            Communication
-                        </h3>
+                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">Payments</h3>
                         <p className="max-w-lg text-lg text-indigo-900">
-                            Great work etiquette from the team and ability to decipher your need and
-                            wants
-                        </p>
-                    </div>
-                    <div className="wow fadeInUp w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-8 shadow-xl">
-                        <div className="flex items-center justify-center">
-                            <img src="/images/our-solutions-icon-2.png" alt="" />
-                        </div>
-                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">
-                            Communication
-                        </h3>
-                        <p className="max-w-lg text-lg text-indigo-900">
-                            Great work etiquette from the team and ability to decipher your need and
-                            wants
+                            Integrated online payment system to manage transaction and for easy
+                            payment of order
                         </p>
                     </div>
                 </div>
