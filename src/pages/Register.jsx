@@ -55,7 +55,10 @@ const Register = () => {
             });
     };
     return (
-        <div className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-4">
+        <div
+            className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-4 relative bg-auto bg-no-repeat"
+            style={{ backgroundImage: "url('/images/homepage1.png')" }}
+        >
             <div>
                 <Link to="/" className="text-center ">
                     <h2 className=" font-serif font-semibold text-indigo-600 md:text-4xl text-2xl">
@@ -67,7 +70,6 @@ const Register = () => {
             <i className="text-center text-sm mt-2 mb-2">
                 start an adventure of a lifetime of fashion sense
             </i>
-
             <form className="space-y-5" method="POST" onSubmit={register}>
                 <ToastContainer />
                 <div>
