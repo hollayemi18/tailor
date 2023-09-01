@@ -4,7 +4,8 @@ const Banner = () => {
     return (
         <section className="w-full overflow-hidden bg-[#dee0ec] wow fadeInUp">
             <div
-                className="relative bg-auto bg-no-repeat bg-[top_120px_right] md:bg-[top_150px_right] -mt-16 lg:bg-[top_10px_right] text-green-700"
+                className="relative bg-auto bg-no-repeat bg-[top_120px_right] md:bg-[top_150px_right] 
+                -mt-16 lg:bg-[top_10px_right] text-green-700"
                 style={{ backgroundImage: "url('/images/homepage1.png')" }}
             >
                 <div>
@@ -23,13 +24,13 @@ const Banner = () => {
                             alt=""
                         />
                         <div>
-                            <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold text-indigo-900">
-                                Fashion,
-                                <br />{" "}
+                            <h1 className="text-4xl lg:text-6xl xl:text-7xl px-15  font-bold text-indigo-900">
+                                Fashion
+                                <br />
                                 <i>
-                                    <span className="text-green-700 ">Great fit </span>
+                                    <span className="text-green-700 ">Finance </span>
                                 </i>
-                                ,At Your <span className="text-green-700">Doorstep</span>
+                                At Your <i className="text-green-800">Doorstep</i>
                             </h1>
                             <div className="flex flex-col  justify-center items-center md:flex-row  mt-20 ">
                                 <Link

@@ -12,7 +12,7 @@ const wave = <FontAwesomeIcon icon={faHand} shake />;
 const Navbar = () => {
     //const [username, setUsername] = useState("");
     useEffect(() => {
-        const local = process.env.REACT_APP_DEV_MODE;
+        const local = process.env.REACT_APP_PRO_MODE;
         // Fetch user information using token from your Express API
         const token = localStorage.getItem("token"); // Assuming you have stored the token after login
         axios

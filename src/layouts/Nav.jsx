@@ -18,7 +18,7 @@ const Nav = () => {
             <div className="flex space-x-4 items-center justify-evenly px-3 py-0 xl:py-0">
                 <div className="flex items-center space-x-12">
                     <Link to="/" className="flex items-center">
-                        <h2 className=" font-serif font-semibold text-indigo-900 md:text-4xl text-2xl">
+                        <h2 className="font-serif font-semibold text-indigo-900 md:text-4xl text-2xl">
                             EASE
                         </h2>
                     </Link>
@@ -55,7 +55,8 @@ const Nav = () => {
                         <div className="ml-32 border-0 border-indigo-500 rounded-md  md:hidden">
                             <Link
                                 to="/login"
-                                className="transition-all text-indigo-600 border-2 rounded-md border-indigo-700 duration-300 px-3 lg:px-4 xl:px-8 font-medium py-2 xl:py-3 hover:text-indigo-600"
+                                className="transition-all text-indigo-600 border-2 rounded-md
+                                 border-indigo-700 duration-300 px-1 lg:px-4 xl:px-8 font-medium py-2 xl:py-3 hover:text-indigo-600"
                             >
                                 Login
                             </Link>

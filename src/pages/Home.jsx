@@ -89,7 +89,7 @@ const Home = () => {
                     Know your proportions. <br className="hidden lg:block" />
                 </h4>
                 <div>
-                    <em className="text-center"> And have a good tailor.</em>
+                    <em className="text-center"> And have a good lifestyle.</em>
                 </div>
                 <p className="text-sm sm:text-base px-10 font-medium">
                     Sign up to start ordering online and managing your fit details.
@@ -239,7 +239,7 @@ const Home = () => {
                      border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/images/our-solutions-icon-1.png" alt="" />
+                            <img src="/images/banner-rocket.png" alt="" />
                         </div>
                         <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">Payments</h3>
                         <p className="max-w-lg text-lg text-indigo-900">
@@ -252,7 +252,7 @@ const Home = () => {
                      border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/images/our-solutions-icon-1.png" alt="" />
+                            <img src="/images/global-payment-icon-1.png" alt="" />
                         </div>
                         <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">Payments</h3>
                         <p className="max-w-lg text-lg text-indigo-900">

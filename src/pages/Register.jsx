@@ -56,8 +56,8 @@ const Register = () => {
     };
     return (
         <div
-            className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-4 relative bg-auto bg-no-repeat"
-            style={{ backgroundImage: "url('/images/homepage1.png')" }}
+            className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-4 relative bg-auto bg-[top_120px_right] md:bg-[top_150px_right]  bg-no-repeat"
+            style={{ backgroundImage: "url('/images/banner-clock.png')" }}
         >
             <div>
                 <Link to="/" className="text-center ">
@@ -67,9 +67,7 @@ const Register = () => {
                 </Link>
             </div>
             <h3 className="text-center text-xl font-semibold text-black">Create New Account</h3>
-            <i className="text-center text-sm mt-2 mb-2">
-                start an adventure of a lifetime of fashion sense
-            </i>
+            <i className="text-center text-sm mt-2 mb-2">start an adventure of a good lifestyle</i>
             <form className="space-y-5" method="POST" onSubmit={register}>
                 <ToastContainer />
                 <div>

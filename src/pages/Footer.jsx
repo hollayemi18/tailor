@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className="wow fadeInLeft bg-[#f9f9fc] py-24 mt-10border-t border-indigo-100">
             <Container>
                 <img
-                    src="/images/homepage2.jpg"
+                    src="/images/global-payment-img.png"
                     className="w-full object-center -mt-20 object-cover border-b"
                     alt=""
                 />
