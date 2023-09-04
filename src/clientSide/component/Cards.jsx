@@ -76,7 +76,7 @@ const Cards = () => {
                     <img src="/images/global-payment-icon-1.png" alt="" width={100} height={100} />
                     <div className="flex flex-col pl-10">
                         <h2 className="font-bold text-green-800">Total Savings</h2>
-                        <h2 className="text-2xl text-blue-800 pt-3"># {amount}</h2>
+                        <h2 className="text-2xl text-blue-800 pt-3">#{amount}</h2>
                     </div>
                 </div>
             </div>
