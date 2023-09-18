@@ -1,53 +1,22 @@
-import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
+import Order from "./page/Order";
 const Bottom = () => {
     const navigate = useNavigate();
-    const logout = e => {
-        e.preventDefault();
-        axios.get("http://localhost:8080/logout").then(res => {
-            if (!res) {
-                toast.error("Unable to logout ");
-            }
-            toast.success("Successfully logout");
-            navigate("/login");
-        });
-    };
     return (
         <div>
             <div
-                className="fixed bg-neutral-100 shadow-indigo-950 z-50 w-full px-4 h-16 max-w-lg -translate-x-1/2 
- border-gray-200 rounded-full bottom-2 left-1/2 "
+                className="fixed bg-neutral-100 shadow-indigo-950 z-50 w-full px-4 h-16 max-w-lg
+ border-gray-200 rounded-full bottom-2  "
             >
-                <div className="grid h-full max-w-lg grid-cols-4 my-2 shadow-indigo-900 mx-auto">
-                    <Link to="" className="no-underline text-black">
-                        <div className="">
-                            <button
-                                onClick={logout}
-                                data-tooltip-target="tooltip-home"
-                                type="button"
-                                className="inline-flex 
-         
-         flex-col items-center justify-center px-5 rounded-l-full hover:text-black hover:bg-black dark:hover:bg-gray-300 rounded-md"
-                            >
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    height="1.5em"
-                                    viewBox="0 0 448 512"
-                                >
-                                    <path
-                                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 
- 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
-                                    />
-                                </svg>{" "}
-                                <span className="btm-nav-label  text-indigo-900">Order</span>
-                            </button>
-                        </div>
-                    </Link>
+                {/* <!-- Button trigger modal --> */}
 
+                <div className=" grid h-full max-w-lg grid-cols-4 my-2 shadow-indigo-900 mx-auto">
+                    <Order />
                     <div className="no-underline text-black ">
                         <div className="btn-nav">
                             <button

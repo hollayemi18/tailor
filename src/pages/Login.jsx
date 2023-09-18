@@ -46,7 +46,7 @@ const Login = () => {
     return (
         <div
             className="flex flex-col gap-1 mx-10 mb-8 md:mx-72 pt-10 bg-[top_120px_right] md:bg-[top_150px_right]  bg-auto  bg-no-repeat"
-            style={{ backgroundImage: "url('/images/homepage1.png')" }}
+            style={{ backgroundImage: "url('/images/banner-map.png')" }}
         >
             <div>
                 <div>

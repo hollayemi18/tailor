@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <section className="w-full overflow-hidden bg-[#dee0ec] wow fadeInUp">
+        <section className="w-full overflow-hidden bg-[fffff3] wow fadeInUp">
             <div
-                className="relative bg-auto bg-no-repeat bg-[top_120px_right] md:bg-[top_150px_right] 
+                className="relative  bg-auto bg-no-repeat bg-[top_120px_right] md:bg-[top_150px_right] 
                 -mt-16 lg:bg-[top_10px_right] text-green-700"
-                style={{ backgroundImage: "url('/images/homepage1.png')" }}
+                style={{ backgroundImage: "url('/images/homepage1.png' )" }}
             >
                 <div>
                     <img
@@ -15,7 +15,20 @@ const Banner = () => {
                         alt=""
                     />
                 </div>
-
+                <div>
+                    <img
+                        className=" mb-10 md:w-[%] h-auto align-middle absolute left-[calc(10%)] bottom-[3%] animate-ripple2 w-21 text-green-700"
+                        src="/images/banner-clock.png"
+                        alt=""
+                    />
+                </div>{" "}
+                <div>
+                    <img
+                        className=" mb-10 md:w-[%] h-auto align-middle absolute left-[calc(10%)] bottom-[3%] animate-ripple2 w-21 text-green-700"
+                        src="/images/banner-map.png"
+                        alt=""
+                    />
+                </div>
                 <div className="pt-[120px] pb-[300px] justify-center text-center lg:mt-24">
                     <div className="pt-5 flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-4 lg:space-x-0 lg:justify-between relative z-10">
                         <img
@@ -46,7 +59,7 @@ const Banner = () => {
                                     to="/explore"
                                     className="lg:mt-0 mx-12 font-extrabold md:text-lg mt-8
                                      truncate transition-all duration-300 px-8 
-                                     font-extrabold py-3 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white
+                                     py-3 text-indigo-900 border border-indigo-900 rounded-md focus:outline-none hover:text-white
                                      hover:bg-indigo-700 focus:ring focus:border-indigo-500 focus:ring-indigo-500/50"
                                 >
                                     <i>Explore</i>

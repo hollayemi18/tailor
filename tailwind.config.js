@@ -1,6 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+    content: [
+        "./src/**/*.{js,jsx,ts,tsx}",
+        "./public/index.html",
+        "./node_modules/tw-elements-react/dist/js/**/*.js"
+    ],
+
     theme: {
         extend: {
             keyframes: {
@@ -19,8 +24,8 @@ module.exports = {
                 ripple: "rippleAni 3s linear infinite",
                 ripple2: "ripple2Ani 4s linear infinite"
             },
-            color:{
-                color1 : "#F2F3F9"
+            color: {
+                color1: "#F2F3F9"
             }
         }
     },

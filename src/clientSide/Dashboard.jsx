@@ -8,8 +8,8 @@ function Dashboard() {
             <Navbar />
 
             <Cards />
-            <Bottom />
             <Footer />
+            <Bottom />
         </div>
     );
 }

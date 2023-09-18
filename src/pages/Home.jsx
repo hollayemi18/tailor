@@ -116,7 +116,7 @@ const Home = () => {
                     />
                 </div>
 
-                <div className="wow fadeInLeft w-full xl:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6 text-indigo-900">
+                <div className="wow fadeInLeft w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:w-full text-indigo-900">
                     <div
                         className="transition-all duration-300 border border-pink-700 rounded-3xl p-12 mx-4 lg:p-8 
                     text-center flex flex-col space-y-2 hover:border-gray-200 hover:border-opacity-50 hover:shadow-2xl"
@@ -226,7 +226,7 @@ const Home = () => {
                      border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/images/our-solutions-icon-1.png" alt="" />
+                            <img src="/images/payment.jpg" alt="" />
                         </div>
                         <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">Payments</h3>
                         <p className="max-w-lg text-lg text-indigo-900">
@@ -239,25 +239,29 @@ const Home = () => {
                      border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/images/banner-rocket.png" alt="" />
+                            <img src="/images/img13.png" alt="" />
                         </div>
-                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">Payments</h3>
+                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">
+                            Flexibility
+                        </h3>
                         <p className="max-w-lg text-lg text-indigo-900">
-                            Integrated online payment system to manage transaction and for easy
-                            payment of order
+                            Ability to choice syles, manage fits, explore materials for sewing ,
+                            manage orders and progress of orders
                         </p>
                     </div>
                     <div
                         className=" wow fadeInLeft w-2/3 mx-auto md:w-full bg-white transition-all duration-300 border
-                     border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
+                     border-gray-200 border-opacity-50 rounded-3xl p- lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
                     >
                         <div className="flex items-center justify-center">
-                            <img src="/images/global-payment-icon-1.png" alt="" />
+                            <img src="/images/comm.jpg" alt="" />
                         </div>
-                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">Payments</h3>
+                        <h3 className="text-xl lg:text-2xl font-bold text-indigo-900">
+                            Communication
+                        </h3>
                         <p className="max-w-lg text-lg text-indigo-900">
-                            Integrated online payment system to manage transaction and for easy
-                            payment of order
+                            Excellent customer communication ranging from our agent to designer down
+                            to the tailors, we give a listening ear to our customers{" "}
                         </p>
                     </div>
                 </div>

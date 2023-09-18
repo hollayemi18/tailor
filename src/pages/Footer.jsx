@@ -12,17 +12,18 @@ const Footer = () => {
     const year = date.getFullYear();
     console.log(year);
     return (
-        <footer className="wow fadeInLeft bg-[#f9f9fc] py-24 mt-10border-t border-indigo-100">
+        <footer className="wow fadeInLeft bg-[#f9f9fc] pt-24 pb-20 mt-10border-t border-indigo-100">
             <Container>
                 <img
-                    src="/images/global-payment-img.png"
+                    src="/images/foot.jpg"
                     className="w-full object-center -mt-20 object-cover border-b"
                     alt=""
                 />
 
                 <div className="mt-8 flex items-center justify-between">
-                    <p className="text-gray-500 uppercase text-xs md:text-base">
-                        Copyright © {year} Grandalat. All Rights Reserved.
+                    <p className="text-gray-500 uppercase text-xs font-light md:text-base">
+                        Copyright © {year} <em className="font-semibold">EaseTech</em>. All Rights
+                        Reserved.
                     </p>
 
                     <div className="flex items-center space-x-4 text-indigo-800">

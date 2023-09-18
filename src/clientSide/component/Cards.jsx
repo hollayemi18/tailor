@@ -12,24 +12,25 @@ const Cards = () => {
     const [amount, setAmount] = useState("123.0");
     return (
         <div>
-            <Container className="wow fadeInUp relative">
-                <div
-                    className=" wow fadeInLeft w-full mt-8 mb-4 mx-auto md:w-full bg-white transition-all duration-300 border
-                     border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
-                >
-                    <div className="text-center flex flex-row justify-between  lg:py-16 text-indigo-800 font-medium">
-                        <em className="text-sm font-black  text-indigo-700">Total Order</em>
-                        <p className="pr-3 text-green-600">10</p>
-                    </div>
-                    <div className="text-center flex flex-row justify-between lg:py-16 text-indigo-800 font-medium">
-                        <em className="text-sm font-black  text-indigo-700">Pending</em>
-                        <p className="pr-3 text-green-600"> 1</p>
-                    </div>
-                    <div className="text-center flex flex-row  justify-between lg:py-16 text-indigo-800 font-medium">
-                        <em className="text-sm font-black  text-indigo-700">In Progress Order</em>
-                        <p className="pr-3 text-green-600"> 3</p>
+            <div
+                className=" wow fadeInLeft mx-6 mt-8 mb-4  md:w-full bg-white transition-all duration-300 border
+                     border-gray-200 border-opacity-50 rounded-3xl px-6 py-3 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
+            >
+                <div className="flex flex-row justify-between">
+                    <img
+                        className="text-indigo-900"
+                        src="/images/update-payment.png"
+                        alt=""
+                        width={50}
+                        height={70}
+                    />
+                    <div className="flex flex-col pl-10">
+                        <em className="font-bold text-green-800">Balance</em>
+                        <h2 className="text-2xl text-blue-800 pt-1">#{amount}</h2>
                     </div>
                 </div>
+            </div>
+            <Container className="wow fadeInUp relative">
                 <div
                     className="grid grid-cols-3 md:grid-cols-4 gap-1 mt-2 mb-2 border-indigo-950 bg-white border w-full border-opacity-50 
                 shadow-1xl rounded-xl"
@@ -67,17 +68,39 @@ const Cards = () => {
                     className="grid grid-cols-3 md:grid-cols-4 gap-1 mt-2  border-indigo-950 bg-white border w-full border-opacity-50 
                 shadow-1xl rounded-xl"
                 ></div>
+                <div
+                    className=" wow fadeInLeft w-full mt-4 mb-4 mx-auto md:w-full bg-white transition-all duration-300 border
+                     border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
+                >
+                    <div className="text-center flex flex-row justify-between  lg:py-16 text-indigo-800 font-medium">
+                        <em className="text-sm font-black  text-indigo-700">Total Order</em>
+                        <p className="pr-3 text-green-600">10</p>
+                    </div>
+                    <div className="text-center flex flex-row justify-between lg:py-16 text-indigo-800 font-medium">
+                        <em className="text-sm font-black  text-indigo-700">Pending</em>
+                        <p className="pr-3 text-green-600"> 1</p>
+                    </div>
+                    <div className="text-center flex flex-row  justify-between lg:py-16 text-indigo-800 font-medium">
+                        <em className="text-sm font-black  text-indigo-700">In Progress Order</em>
+                        <p className="pr-3 text-green-600"> 3</p>
+                    </div>
+                </div>
             </Container>
+
             <div
-                className=" wow fadeInLeft mx-6 mt-8 mb-4  md:w-full bg-white transition-all duration-300 border
+                className=" wow fadeInLeft mx-16 mt-4 mb-4  md:w-full bg-gray-50 transition-all duration-300 border
+                     border-gray-200 border-opacity-50 rounded-3xl py-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
+            >
+                <div className="">
+                    <h2 className="font-bold text-center text-green-800">Explore Styles</h2>
+                </div>
+            </div>
+            <div
+                className=" wow fadeInLeft mx-16 mt-4 mb-4 md:w-full bg-gray-50 transition-all duration-300 border
                      border-gray-200 border-opacity-50 rounded-3xl p-4 lg:p-8 text-center flex flex-col space-y-4 shadow-xl"
             >
-                <div className="flex flex-row">
-                    <img src="/images/global-payment-icon-1.png" alt="" width={100} height={100} />
-                    <div className="flex flex-col pl-10">
-                        <h2 className="font-bold text-green-800">Total Savings</h2>
-                        <h2 className="text-2xl text-blue-800 pt-3">#{amount}</h2>
-                    </div>
+                <div className="">
+                    <h2 className="font-bold text-center  text-green-800">Explore Market</h2>
                 </div>
             </div>
         </div>

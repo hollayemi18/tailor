@@ -16,15 +16,15 @@ export const Input = ({
 
     return (
         <>
-            <label htmlFor={id} className="text-sm text-gray-700 font-semibold">
-                {label} {required && <span className="text-red-500">*</span>}
+            <label htmlFor={id} className="text-base text-gray-700  font-semibold">
+                {required && <span className="text-red-500">*</span>} {label}
             </label>
 
             <div className="relative">
                 <input
                     id={id}
                     type={type === "password" ? (show ? "text" : "password") : type}
-                    className={`transition-all duration-300 ${
+                    className={`transition-all whitespace-pre-wrap duration-300 ${
                         disabled ? "bg-gray-100" : ""
                     } mt-2 py-2.5 px-4 w-full ${
                         error.length
