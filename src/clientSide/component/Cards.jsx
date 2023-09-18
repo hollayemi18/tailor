@@ -3,13 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping, faBook, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
-const order = <FontAwesomeIcon icon={faBagShopping} size="1xl" />;
+import OrderList from "../page/OrderList";
 const tape = <FontAwesomeIcon icon={faBook} size="1xl" />;
 const history = <FontAwesomeIcon icon={faFolderOpen} size="1xl" />;
 
 const Cards = () => {
-    const [amount, setAmount] = useState("123.0");
+    const [amount, setAmount] = useState("58,330.0");
     return (
         <div>
             <div
@@ -39,14 +38,7 @@ const Cards = () => {
                     className="grid grid-cols-3 md:grid-cols-4 gap-1 border-indigo-500-400 border w-full bg-blue-950 border-opacity-50 
                 shadow-1xl rounded-xl"
                 >
-                    <Link>
-                        <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
-                            <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-l-3xl shadow-lg ">
-                                {order}
-                            </div>
-                            <p className="mt-2 text-xs font-black  text-white"> order</p>
-                        </div>
-                    </Link>
+                    <OrderList />
                     <Link>
                         <div className="text-center py-5  lg:py-16 space-y-3 text-indigo-800 font-medium">
                             <div className="flex  items-center justify-center bg-slate-100 mx-5 py-3  rounded-none shadow-lg ">

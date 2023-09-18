@@ -6,7 +6,6 @@ function Dashboard() {
     return (
         <div>
             <Navbar />
-
             <Cards />
             <Footer />
             <Bottom />

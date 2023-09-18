@@ -4,11 +4,11 @@ import {
     TEModal,
     TEModalDialog,
     TEModalContent,
-    TEModalHeader,
     TEModalBody,
     TEModalFooter
 } from "tw-elements-react";
-import { Checkbox, Input } from "../../layouts/field";
+//aimport { toast, ToastContainer } from "react-toastify";
+import { Input } from "../../layouts/field";
 const FullscreenModal = () => {
     const [showModal, setShowModal] = useState(false);
     const [email, setEmail] = useState();
