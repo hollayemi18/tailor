@@ -8,12 +8,15 @@ const Bottom = () => {
     return (
         <div>
             <div
-                className="fixed bg-neutral-100 shadow-indigo-950 z-50 w-full px-4 h-16 max-w-lg
- border-gray-200 rounded-full bottom-2  "
+                className="fixed bg-neutral-100 shadow-indigo-950 z-50 w-full l px-4 h-16 max-w-lg
+ border-gray-200 rounded-full bottom-2 flex items-center justify-center "
             >
                 {/* <!-- Button trigger modal --> */}
 
-                <div className=" grid h-full max-w-lg grid-cols-4 my-2 shadow-indigo-900 mx-auto">
+                <div
+                    className=" grid  h-full max-w-lg  grid-cols-4 my-2 shadow-indigo-900 mx-auto md:w-full lg:max-w-lg
+                 "
+                >
                     <Order />
                     <Link to="/dashboard/wallet">
                         <div className="no-underline text-black ">

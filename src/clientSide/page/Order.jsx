@@ -47,7 +47,7 @@ const FullscreenModal = () => {
             {/* <!-- Modal --> */}
             <TEModal show={showModal} setShow={setShowModal} staticBackdrop>
                 <TEModalDialog className="my-4 mx-2">
-                    <TEModalContent className="dark:bg-slate-300">
+                    <TEModalContent className="dark:bg-slate-200">
                         <button
                             type="button"
                             className="box-content rounded
