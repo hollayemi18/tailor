@@ -10,6 +10,7 @@ import { Container } from "../layouts/utils";
 const Footer = () => {
     const date = new Date();
     const year = date.getFullYear();
+
     return (
         <footer className="wow fadeInLeft bg-[#f9f9fc] pt-24 pb-20 mt-10border-t border-indigo-100">
             <Container>

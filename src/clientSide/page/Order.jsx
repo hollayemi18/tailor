@@ -138,16 +138,17 @@ const FullscreenModal = () => {
                                     onChange={e => setNumber(e.target.value)}
                                 />
                             </div>
-                            <div className="whitespace-normal">
-                                <Input
-                                    label={"Add On Notes"}
+                            <div className="whitespace-normal flex flex-col mt-3 text-lg font-extrabold text-gray-700">
+                                <label className="text-center pb-2"> Add On Note</label>
+                                <textarea
+                                    className="text-xs py-5 text-black"
                                     id="note"
                                     value={note}
                                     type="text"
                                     onChange={e => setNote(e.target.value)}
                                 />
                             </div>
-                            <p className="text-xs  pt-8">
+                            <p className="text-sm  pt-8">
                                 <span className="text-red-500">*</span>Please make sure your
                                 Measurement is available and updated
                             </p>
