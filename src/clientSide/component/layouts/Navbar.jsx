@@ -13,8 +13,7 @@ const Navbar = () => {
   //const [logging, setLogging] = useState(false);
   const [username, setUsername] = useState('');
 
-  useEffect((e) => {
-    e.preventDefault();
+  useEffect(() => {
     const local = process.env.REACT_APP_DEV_MODE;
     const fetchData = async () => {
       try {

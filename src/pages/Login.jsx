@@ -9,9 +9,9 @@ const Login = () => {
   const history = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const local = process.env.REACT_APP_DEV_MODE;
 
   const login = async (e) => {
+    const local = process.env.REACT_APP_DEV_MODE;
     e.preventDefault();
 
     if (!email) {
