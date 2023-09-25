@@ -40,7 +40,7 @@ const Navbar = () => {
           alt='DP'
         />
         <div className='mt-6  ml-2 flex flex-col'>
-          <em className='text-2xl text-black'>{username},</em>
+          {username && <em className='text-2xl text-black'>{username},</em>}
           <i className=' font-serif text-sm'>
             welcome
             <span className='text-sm font-serif text-green-600 ml-1'>back</span>
