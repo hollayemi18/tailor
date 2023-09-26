@@ -22,7 +22,7 @@ const Login = () => {
     }
     try {
       const res = await axios.post(
-        `${local}auth/login`,
+        `${local}/auth/login`,
         {
           email,
           password,
