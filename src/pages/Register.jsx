@@ -39,12 +39,12 @@ const Register = () => {
         { withCredentials: true }
       )
       .then((res) => {
-        if (res.data === 'not successful') {
-          toast.error('not Successfully register');
+        if (res.data === 'cant register') {
+          toast.error('Not Successful!');
         } else if (res.data === 'Email is registered') {
-          toast.error('email existed');
-        } else if (res.data === 'username is taken') {
-          toast.error('username is taken');
+          toast.error('Email is registered ');
+        } else if (res.data === 'Username taken') {
+          toast.error('Username Is taken');
         } else {
           toast.success('Successfully register');
           navigate('/login');

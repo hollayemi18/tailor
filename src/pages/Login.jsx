@@ -30,9 +30,10 @@ const Login = () => {
         { withCredentials: true }
       );
 
-      if (res.status === 200) {
-        toast.success('successful');
-        Loader(true);
+      if (res.status === 400) {
+        toast.error('Email or Passowrd is Incorrect');
+      } else {
+        toast.success('Email or Passowrd is Incorrect');
         history('/dashboard');
       }
     } catch (error) {
