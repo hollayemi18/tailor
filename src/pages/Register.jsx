@@ -34,7 +34,6 @@ const Register = () => {
         {
           username,
           email,
-          password,
         },
         { withCredentials: true }
       )
