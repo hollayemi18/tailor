@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { useNavigate, Link } from 'react-router-dom';
-import { Loader } from '../layouts/utils';
+//import { Loader } from '../layouts/utils';
 import { Checkbox, Input } from '../layouts/field';
 import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
@@ -11,7 +11,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const login = async (e) => {
-    const local = process.env.REACT_APP_MODE;
+    const local = process.env.REACT_MODE;
     e.preventDefault();
 
     if (!email) {
