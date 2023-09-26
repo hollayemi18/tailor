@@ -11,7 +11,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
 
   const login = async (e) => {
-    const local = process.env.REACT_APP_DEV_MODE;
+    const local = process.env.REACT_APP_MODE;
     e.preventDefault();
 
     if (!email) {

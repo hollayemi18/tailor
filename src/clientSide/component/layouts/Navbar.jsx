@@ -14,7 +14,7 @@ const Navbar = () => {
   const [username, setUsername] = useState('');
 
   useEffect(() => {
-    const local = process.env.REACT_APP_DEV_MODE;
+    const local = process.env.REACT_APP_MODE;
     const fetchData = async () => {
       try {
         const result = await axios.get(`${local}auth/user`, {

@@ -16,7 +16,7 @@ const Register = () => {
   // const [reg, setReg] = useState("");
 
   const register = async (e) => {
-    const local = process.env.REACT_APP_DEV_MODE;
+    const local = process.env.REACT_MODE;
     e.preventDefault();
     if (!email) {
       return toast.error('All fields are required');
